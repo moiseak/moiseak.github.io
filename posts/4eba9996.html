@@ -7,7 +7,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://s2.loli.net/2024/09/27/gNlfH9X5b8koex2.png">
 <meta property="article:published_time" content="2024-09-27T11:18:45.000Z">
-<meta property="article:modified_time" content="2024-09-28T12:20:37.015Z">
+<meta property="article:modified_time" content="2024-09-28T13:28:03.035Z">
 <meta property="article:author" content="moiads">
 <meta property="article:tag" content="CS61A">
 <meta property="article:tag" content="Python">
@@ -58,7 +58,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2024-09-28 20:20:37'
+  postUpdate: '2024-09-28 21:28:03'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -157,26 +157,26 @@
       detectApple()
     })(window)</script><meta name="generator" content="Hexo 7.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2024/09/27/qZw9EAWKdVifYXO.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2024/09/27/gNlfH9X5b8koex2.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Moiads"><span class="site-name">Moiads</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">CS61A(一)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-09-27T11:18:45.000Z" title="Created 2024-09-27 19:18:45">2024-09-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-09-28T12:20:37.015Z" title="Updated 2024-09-28 20:20:37">2024-09-28</time></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1>Recursive Leap of Faith</h1>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2024/09/27/qZw9EAWKdVifYXO.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2024/09/27/gNlfH9X5b8koex2.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Moiads"><span class="site-name">Moiads</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">CS61A(一)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-09-27T11:18:45.000Z" title="Created 2024-09-27 19:18:45">2024-09-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-09-28T13:28:03.035Z" title="Updated 2024-09-28 21:28:03">2024-09-28</time></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1>Recursive Leap of Faith</h1>
 <p><em><strong>请确保你已经有Python关于Functions, Control, Sequences and OOP的基础知识</strong></em></p>
 <h2 id="入门">入门</h2>
 <p>为什么叫做"信仰之跃"? 我认为是: <em>信任你的递归函数, 你让它做什么, 它就一定会做到, 无论过程如何.</em><br>
 举个简单的例子:</p>
-<h3 id="1-sum-digits">1.sum_digits</h3>
+<h3 id="1-sum-digits">1.<code>sum_digits</code></h3>
 <p>现在要求编写一个计算一个正整数所有位上的数字的和, 比如123所有位的和就是1+2+3=6.</p>
 <p><strong>那现在想一想, 你希望你编写的函数做到什么?</strong></p>
 <p>我们直接定义我们编写的函数能够计算一个正整数所有位上的数字的和, 但肯定不能直接把这个正整数放进去, 所以一个很自然的想法出现了:<br>
 <strong>用我们定义的函数计算前面n-1位数字的和再加上最后一位不就可以了:</strong></p>
 <figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">sum_digits(all_but_last) + last</span><br></pre></td></tr></tbody></table></figure>
-<p>但我们很轻易就能发现这里还有一种<strong>特殊情况</strong>: 当这个正整数是个位数的时候, 不需要计算, 直接return就可以了.<br>
+<p>但我们很轻易就能发现这里还有一种<strong>特殊情况</strong>: 当这个正整数是个位数的时候, 不需要计算, 直接返回就可以了.<br>
 于是我们可以把完整的代码写出来了:</p>
 <figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">sum_digits</span>(<span class="params">n</span>):</span><br><span class="line">    <span class="string">"""Return the sum of the digits of positive integer n."""</span></span><br><span class="line">    <span class="keyword">if</span> n &lt; <span class="number">10</span>:                                      <span class="comment">#特殊情况</span></span><br><span class="line">        <span class="keyword">return</span> n</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        all_but_last, last = n // <span class="number">10</span>, n % <span class="number">10</span></span><br><span class="line">        <span class="keyword">return</span> sum_digits(all_but_last) + last      <span class="comment">#不用担心sum_digits(all_but_last)怎么得到答案, 这就是它的定义</span></span><br></pre></td></tr></tbody></table></figure>
 <p><em><strong>如果你干过用人脑压栈的蠢事, 对这个方法的感触会更深</strong></em></p>
 <p>再来一个例子:</p>
-<h3 id="2-double-eights">2.double_eights</h3>
-<p>编写一个函数判断一个正整数是否含两个有相邻的数字’8’, 如88, 1889, 1881111都return True.</p>
-<p>同样地相信我们的函数, 第一步可以先判断个位和十位有没有连续的’8’, 如果有直接return True, 如果没有, 个位就被排除了.<br>
-我们又注意到如果这个正整数只有两位数, 那么我们判断完个位和十位不符合条件后就可以直接return False了.<br>
+<h3 id="2-double-eights">2.<code>double_eights</code></h3>
+<p>编写一个函数判断一个正整数是否含两个有相邻的数字’8’, 如88, 1889, 1881111都<code>return True</code>.</p>
+<p>同样地相信我们的函数, 第一步可以先判断个位和十位有没有连续的’8’, 如果有直接<code>return True</code>, 如果没有, 个位就被排除了.<br>
+我们又注意到如果这个正整数只有两位数, 那么我们判断完个位和十位不符合条件后就可以直接<code>return False</code>了.<br>
 接下来就可以用我们定义的函数, 来判断除了最后一位的前n-1位有没有相邻的’8’.<br>
 通过上面的思考, 翻译成Python完整代码如下:</p>
 <figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">double_eights</span>(<span class="params">n</span>):</span><br><span class="line">    last, second_last = n % <span class="number">10</span>, n // <span class="number">10</span> % <span class="number">10</span>    </span><br><span class="line">    <span class="keyword">if</span> last == <span class="number">8</span> <span class="keyword">and</span> second_last == <span class="number">8</span>:              <span class="comment">#判断个位和十位</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">elif</span> n &lt; <span class="number">100</span>:                                   <span class="comment">#两位数不符合上述条件直接返回, 不进递归</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> double_eights(n // <span class="number">10</span>)                   <span class="comment">#个位被排除了</span></span><br></pre></td></tr></tbody></table></figure>
@@ -187,14 +187,14 @@
 <p><strong>同时, 我们对这个所谓的"特殊情况"可以再讨论一下, 它是否可以看作递归的截止条件? 满足该条件即结束本层递归, 返回上层递归.</strong></p>
 <h2 id="初级">初级</h2>
 <p><em><strong>请尽量先自己想一想</strong></em></p>
-<h3 id="3-make-onion">3.make_onion</h3>
-<p>编写一个函数 make_onion, 该函数接受两个单参数函数 f 和 g. 它return一个函数can_reach, 该函数接受：x、y 和 limit三个参数.<br>
-如果可以使用最多 limit 次对函数 f 和 g 的调用从 x 到达 y，则return True，否则return False.<br>
-例如，如果调用 f 值就加 1 ,调用 g 值就加倍，则可以通过四次调用从 5 到达 25：f(g(g(f(5)))). 即can_reach(5, 25, 4) return True.<br>
+<h3 id="3-make-onion">3.<code>make_onion</code></h3>
+<p>编写一个函数<code>make_onion</code>, 该函数接受两个单参数函数 f 和 g. 它<code>return</code>一个函数<code>can_reach</code>, 该函数接受：x、y 和 limit三个参数.<br>
+如果可以使用最多 limit 次对函数 f 和 g 的调用从 x 到达 y，则<code>return True</code>，否则<code>return False</code>.<br>
+例如，如果调用 f 值就加 1 ,调用 g 值就加倍，则可以通过四次调用从 5 到达 25：<code>f(g(g(f(5))))</code>. 即<code>can_reach(5, 25, 4)</code> <code>return True</code>.<br>
 因为有两个函数, 所以用or代表两个方向, 任何一个方向成功就返回True, 同时注意我们调用了一次 f or g ,所以limit次数记得减一.</p>
 <p><em>一个函数不直接返回答案, 而是返回另一个函数来辅助得到答案, 那么这个返回函数就叫做辅助函数.</em></p>
 <figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">make_onion</span>(<span class="params">f, g</span>):</span><br><span class="line">    <span class="string">"""Return a function can_reach(x, y, limit) that returns</span></span><br><span class="line"><span class="string">    whether some call expression containing only f, g, and x with</span></span><br><span class="line"><span class="string">    up to limit calls will give the result y."""</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">can_reach</span>(<span class="params">x, y, limit</span>):</span><br><span class="line">        <span class="keyword">if</span> limit &lt; <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">elif</span> x == y:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span>                 <span class="comment">#两个 base cases.</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> can_reach(f(x), y, limit - <span class="number">1</span>) <span class="keyword">or</span> can_reach(g(x), y, limit - <span class="number">1</span>)</span><br><span class="line">    <span class="keyword">return</span> can_reach</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="4-count-partitions">4.count_partitions</h3>
+<h3 id="4-count-partitions">4.<code>count_partitions</code></h3>
 <p>正整数 n 的分区的数量(使用最大为 m 的部分)是将 n 表示为最大为 m 的正整数部分之和的方式数(按递增顺序). 例如，6 的分区的数量(使用最大为 4 的部分)是 9.<br>
 九种方法具体地排列如下:<br>
 6 = 2 + 4<br>
@@ -206,7 +206,7 @@
 6 = 1 + 1 + 2 + 2<br>
 6 = 1 + 1 + 1 + 1 + 2<br>
 6 = 1 + 1 + 1 + 1 + 1 + 1<br>
-我们将定义一个函数 count_partitions(n, m)来计算分区方法的数量.</p>
+我们将定义一个函数<code>count_partitions(n, m)</code>来计算分区方法的数量.</p>
 <figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">count_partitions</span>(<span class="params">n, m</span>):</span><br><span class="line">    <span class="string">"""Count the ways to partition n using parts up to m."""</span></span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    <span class="keyword">elif</span> n &lt; <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    <span class="keyword">elif</span> m == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> count_partitions(n-m, m) + count_partitions(n, m-<span class="number">1</span>)</span><br></pre></td></tr></tbody></table></figure>
 <p>使用最多 m 个整数对 n 进行分区的方法数等于<br>
 使用最多 m 个整数对 n-m 进行分区的方法数，以及<br>
@@ -219,18 +219,19 @@
 有 0 种方法可以使用大小为 0 或更小的部分来分割任何大于 0 的 n.</p>
 <p><em>下面会涉及几种数据结构, 如果你需要复习,<a target="_blank" rel="noopener" href="https://www.composingprograms.com/pages/23-sequences.html">请点击</a></em></p>
 <h2 id="中级">中级</h2>
-<h3 id="5-berry-finder">5.berry_finder</h3>
-<p>校园里的松鼠需要你的帮助！校园里有很多树，松鼠想知道哪些树上有浆果。定义一个名为 berry_finder 的函数，该函数接收一棵树作为输入，如果树中有一个节点的值为 ‘berry’，则返回 True，否则返回 False.<br>
-回忆一下我们上面讲到的.对于一棵树, 由于它的分支是一个列表, 所以我们有特殊的递归使用:</p>
+<h3 id="5-berry-finder">5.<code>berry_finder</code></h3>
+<p>校园里的松鼠需要你的帮助！校园里有很多树，松鼠想知道哪些树上有浆果。定义一个名为<code>berry_finder</code>的函数，该函数接收一棵树作为输入，如果树中有一个节点的值为 ‘berry’，则返回 True，否则返回 False.</p>
+<p>回忆一下我们上面讲到的.对于一棵树, 由于它的分支是一个列表, 所以我们有特殊的递归使用:</p>
 <figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> b <span class="keyword">in</span> branches(t):</span><br></pre></td></tr></tbody></table></figure>
 <p>那么这道题, 我们对每个子树分别进行搜索就能得到答案了:</p>
 <figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> label(t) == <span class="string">'berry'</span>:                     <span class="comment">#不要忘记检查label, 同时这个语句也是递归的截止条件</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">for</span> b <span class="keyword">in</span> branches(t):                   <span class="comment">#遍历子树</span></span><br><span class="line">        <span class="keyword">if</span> berry_finder(b):                 <span class="comment">#判断每个子树是否符合条件</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="6-max-path-sum">6.max_path_sum</h3>
-<p>编写一个函数，接收一棵树作为输入，并返回从树根到任意叶节点路径上节点值的最大和。根到叶节点的路径是指从根节点开始，经过一系列节点到达某个叶节点的节点序列。可以假设树中的所有节点标签都是正数。<br>
-同样的, 对于这种树的题目我们可以直接把子树全塞我们定义的函数中:</p>
+<h3 id="6-max-path-sum">6.<code>max_path_sum</code></h3>
+<p>编写一个函数，接收一棵树作为输入，并返回从树根到任意叶节点路径上节点值的最大和。根到叶节点的路径是指从根节点开始，经过一系列节点到达某个叶节点的节点序列。可以假设树中的所有节点标签都是正数。</p>
+<p>寻找最大和可以使用<code>max</code>函数, 参数为各个子树的最大和.<br>
+同样的, 对于这种树的题目我们可以直接把子树全塞我们定义的函数中, 再加上base cases:</p>
 <figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">max_path_sum</span>(<span class="params">t</span>):</span><br><span class="line">    <span class="string">"""Return the maximum root-to-leaf path sum of a tree.</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; t = tree(1, [tree(5, [tree(1), tree(3)]), tree(10)])</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; max_path_sum(t) # 1, 10</span></span><br><span class="line"><span class="string">    11</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; t2 = tree(5, [tree(4, [tree(1), tree(3)]), tree(2, [tree(10), tree(3)])])</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; max_path_sum(t2) # 5, 2, 10</span></span><br><span class="line"><span class="string">    17</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="comment"># Non-list comprehension solution</span></span><br><span class="line">    <span class="keyword">if</span> is_leaf(t):</span><br><span class="line">        <span class="keyword">return</span> label(t)</span><br><span class="line">    highest_sum = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> b <span class="keyword">in</span> branches(t):</span><br><span class="line">        highest_sum = <span class="built_in">max</span>(max_path_sum(b), highest_sum)</span><br><span class="line">    <span class="keyword">return</span> label(t) + highest_sum</span><br><span class="line"></span><br><span class="line">    <span class="comment"># List comprehension solution</span></span><br><span class="line">    <span class="keyword">if</span> is_leaf(t):</span><br><span class="line">      <span class="keyword">return</span> label(t)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">      <span class="keyword">return</span> label(t) + <span class="built_in">max</span>([max_path_sum(b) <span class="keyword">for</span> b <span class="keyword">in</span> branches(t)])</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="7-add-d-leaves">7.add_d_leaves</h3>
-<p>实现 add_d_leaves 函数，该函数接收一个 Tree 实例 t 和一个数字 v。<br>
+<h3 id="7-add-d-leaves">7.<code>add_d_leaves</code></h3>
+<p>实现<code>add_d_leaves</code>函数，该函数接收一个 Tree 实例 t 和一个数字 v。<br>
 我们定义树 t 中某个节点的深度为从根节点到该节点之间边的数量。因此，根节点的深度为 0。<br>
 对于树中的每个节点，你应该根据节点的深度 d 添加 d 个叶子节点。每个添加的叶子节点的标签都应该为 v。如果某个节点已经有了分支，应该将这些叶子添加到分支列表的末尾。<br>
 例如，你需要在深度为 1 的每个节点上添加 1 个标签为 v 的叶子，在深度为 2 的每个节点上添加 2 个标签为 v 的叶子，依此类推。</p>
@@ -240,8 +241,8 @@
 <figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> b <span class="keyword">in</span> t.branches:</span><br><span class="line">    add_leaves(b, d + <span class="number">1</span>)</span><br></pre></td></tr></tbody></table></figure>
 <p>还要注意我们要在遍历之后再添加叶子, 否则后面的遍历会把新加入的叶子一起遍历, 这不符合我们的要求<br>
 结合:</p>
-<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">add_d_leaves</span>(<span class="params">t, v</span>):</span><br><span class="line">    <span class="string">"""Add d leaves containing v to each node at every depth d.</span></span><br><span class="line"><span class="string">    def add_leaves(t, d):</span></span><br><span class="line"><span class="string">        for b in t.branches:</span></span><br><span class="line"><span class="string">            add_leaves(b, d + 1)</span></span><br><span class="line"><span class="string">        t.branches.extend([Tree(v) for _ in range(d)]) </span></span><br><span class="line"><span class="string">    add_leaves(t, 0)</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="8-level-mutation-link">8.level_mutation_link</h3>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">add_d_leaves</span>(<span class="params">t, v</span>):</span><br><span class="line">    <span class="string">"""Add d leaves containing v to each node at every depth d."""</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">add_leaves</span>(<span class="params">t, d</span>):</span><br><span class="line">        <span class="keyword">for</span> b <span class="keyword">in</span> t.branches:</span><br><span class="line">            add_leaves(b, d + <span class="number">1</span>)</span><br><span class="line">        t.branches.extend([Tree(v) <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(d)]) </span><br><span class="line">    add_leaves(t, <span class="number">0</span>)</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="8-level-mutation-link">8.<code>level_mutation_link</code></h3>
 <p>给定一棵树 t 和一个由单参数函数组成的链表 funcs，编写一个函数，通过使用 funcs 中对应深度的函数，修改树 t 中各节点的标签。例如：<br>
 根节点（深度 0）的标签将使用 funcs 中深度 0 对应的函数来修改（即 funcs.first）。<br>
 树中第一层的节点标签将使用 funcs 中深度 1 对应的函数来修改（即 funcs.rest.first），依此类推。<br>
