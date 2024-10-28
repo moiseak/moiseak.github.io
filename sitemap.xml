@@ -2,24 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://moiseak.github.io/posts/8d64c065.html</loc>
-    
-    <lastmod>2024-10-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://moiseak.github.io/posts/9d40f41.html</loc>
-    
-    <lastmod>2024-10-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://moiseak.github.io/posts/f397e04e.html</loc>
     
     <lastmod>2024-10-28</lastmod>
@@ -29,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://moiseak.github.io/posts/22555b07.html</loc>
+    <loc>https://moiseak.github.io/posts/f7f583c.html</loc>
     
     <lastmod>2024-10-28</lastmod>
     
@@ -38,7 +20,16 @@
   </url>
   
   <url>
-    <loc>https://moiseak.github.io/posts/f7f583c.html</loc>
+    <loc>https://moiseak.github.io/posts/8d64c065.html</loc>
+    
+    <lastmod>2024-10-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://moiseak.github.io/posts/22555b07.html</loc>
     
     <lastmod>2024-10-28</lastmod>
     
