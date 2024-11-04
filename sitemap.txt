@@ -1,3 +1,4 @@
+https://moiseak.github.io/about/index.html
 https://moiseak.github.io/posts/cebdab86.html
 https://moiseak.github.io/posts/8d64c065.html
 https://moiseak.github.io/posts/f397e04e.html
@@ -10,7 +11,6 @@ https://moiseak.github.io/posts/f7f583c.html
 https://moiseak.github.io/posts/91e85d6d.html
 https://moiseak.github.io/posts/66e3f11.html
 https://moiseak.github.io/posts/7a935cfb.html
-https://moiseak.github.io/about/index.html
 https://moiseak.github.io/link/index.html
 https://moiseak.github.io/categories/index.html
 https://moiseak.github.io/tags/index.html

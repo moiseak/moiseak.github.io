@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://moiseak.github.io/about/index.html</loc>
+    
+    <lastmod>2024-11-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://moiseak.github.io/posts/cebdab86.html</loc>
     
     <lastmod>2024-11-04</lastmod>
@@ -104,15 +113,6 @@
     <loc>https://moiseak.github.io/posts/7a935cfb.html</loc>
     
     <lastmod>2024-11-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://moiseak.github.io/about/index.html</loc>
-    
-    <lastmod>2024-09-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
