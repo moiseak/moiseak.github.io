@@ -6,7 +6,7 @@
   <link href="https://moiseak.github.io/atom.xml" rel="self"/>
   
   <link href="https://moiseak.github.io/"/>
-  <updated>2024-11-04T12:32:48.705Z</updated>
+  <updated>2024-11-04T14:13:45.809Z</updated>
   <id>https://moiseak.github.io/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
@@ -16,10 +16,19 @@
     <link href="https://moiseak.github.io/posts/cebdab86.html"/>
     <id>https://moiseak.github.io/posts/cebdab86.html</id>
     <published>2024-11-02T12:48:36.000Z</published>
-    <updated>2024-11-04T12:32:48.705Z</updated>
+    <updated>2024-11-04T14:13:45.809Z</updated>
     
     
-    <summary type="html">周记</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天字节青训营开始了,难绷三十分钟速通Go.&lt;br&gt;
+上一个案例还在写猜数字,下面就开始写socket协议了…&lt;br&gt;
+这一个月应该会花很多时间在go上.&lt;/p&gt;
+&lt;p&gt;CS61B的算法部分打算慢慢学,然后学一点就写一点博客,毕竟我二叉树还没刷完,算法不急着赶,慢慢看就可以</summary>
+        
+      
     
     
     
