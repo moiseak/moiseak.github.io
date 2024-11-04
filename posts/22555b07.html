@@ -1,15 +1,488 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author"><title>随想(一) · Moiads</title><meta name="description" content="144a20d65bab5ef7bdec34f9dfdc3cac2cf7da11eb234afdf504ef0d0b54461ac89b5cfa8210b90071c14fb2b49deb50cd337c6a1418838b17e8f7f7e1074d13275001077732c66ae7468b"><meta name="og:description" content="144a20d65bab5ef7bdec34f9dfdc3cac2cf7da11eb234afdf504ef0d0b54461ac89b5cfa8210b90071c14fb2b49deb50cd337c6a1418838b17e8f7f7e1074d13275001077732c66ae7468b"><meta name="twitter:site" content="Moiads"><meta name="twitter:title" content="随想(一)"><meta name="twitter:card" content="summary"><meta name="keywords" content=""><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 7.3.0">
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="随便写一下">
+    <meta name="author" content="Keep Team">
+    
+    <title>
+        
+            随想(一) |
+        
+        Keep Theme
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/logo.svg">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"moiseak.github.io","root":"/","language":"zh-cn"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"Keep Theme","author":"Keep Team","avatar":"https://cdn.jsdelivr.net/gh/moiseak/blogimg@main/img/master1200.jpg","logo":"/images/logo.svg","favicon":"/images/logo.svg"},"menu":{"home":"/","archives":"/archives"},"first_screen":{"enable":false,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":false,"tag":false,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":false,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":false,"preload":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2020,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{},"version":"4.2.3"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Moiads" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><div class="container" id="stage"><div class="row"><div class="col-sm-3 col-xs-12 side-container invisible" id="side-bar"><div class="vertical-text site-title"><h3 class="site-title-small" tabindex="-1"><a class="a-title" href="/">Typography</a></h3><h1 class="site-title-large" tabindex="-1"><a class="a-title" href="/">活版印字</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div class="site-title-links" id="site-nav"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archive</a></li><li><a href="/categories">Categories</a></li><li><a href="/tags">Tags</a></li><li><a href="/about/index.html">about</a></li><li><a href="/link/index.html">link</a></li><li><a href="/categories/index.html">categories</a></li><li><a href="/tags/index.html">tags</a></li><li class="soc"><a href="https://moiseak.github.io/atom.xml" target="_blank" rel="noopener noreferrer" aria-label="RSS"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2024&nbsp;<a target="_blank" href="https://moiseak.github.io" rel="noopener noreferrer">moiads</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div class="col-sm-9 col-xs-12 main-container invisible" id="main-container"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>随想(一)</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2024-09-06</span><span class="meta-item"><i class="fa fa-folder"></i><span>&nbsp;</span><a class="a-tag" href="/categories/随想/" title="随想">随想</a><span>&nbsp;</span></span></p><p class="post-abstract"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="c95f5b1bebfcd7d2f3b52d01d4512656d3eba11f5805a39d87978761c087a25b">144a20d65bab5ef7bdec34f9dfdc3cac2cf7da11eb234afdf504ef0d0b54461ac89b5cfa8210b90071c14fb2b49deb50cd337c6a1418838b17e8f7f7e1074d13275001077732c66ae7468b9f9d1d5237e7e9b626410663c63670905b501e5f3d96b9331424b2883aeee3b97b4c076d08828e6e3c6e71d0914b720d5dbae43e8e1e6f316b9961cb4e90417436a47fd751fb6bed6bfca259503941ed76a43143c6d54321cdb9a49b58482d30aafe48f639fd37b7fc4588bddab91901dfc807d0016267da5c27dc9d7b129979810aec7a9d3d3cba06205d1978d0aba20dc16bf4c1b0b9b80ffff1f091b2118892fec56187de45c00c04b489454f4f4947f9b7ba2337398c43fa1a4a736b1cc84fa4409c5dce1d1fbd92cd4fed23a39e5f89bf378d123b6e865991aaf9aa84e0c09692edfe81840a85f8b87259731cdc1b87271c86d9d624b4b92c8b22f3f4b829766db51333fdd7d11c962752844d126edf8840afaa8dc8110aed90c4893172cc42c53b2d36e5689995e8b785e144d38f2ca571ab1845c640478021ab36b7ad49cc896bc23a33a2de08c5f480c7218f1e7b6d4f4a2e3ed343e72695ebf54263359c07df5cfe8626344f2c106647a53840bcf337813edb445ddb44ddb226e440f71d8b332680e77f5582abac97a81fd899143018456c2f9ad4ceee497a873e1cfc8d2bbef3ae8c3f1a8768128a36a15bf7d84591282d2fa994ae54cc82253675c2e9acfd68df2e21d80e1dda99d56f56881eca2c8cc88a8ed8c1a8aa941b6465413ce03567a57a89b81fbed17ca456259d15acaeee67b229304fd5039c010d3bb83d77d1eb954a0075c5dcc268f577aaed28a8e143c4f81f58bba116cb5ff76d540ef3a98c23b04113a4f5a5b1a7e3e365bf290fa0f2e425c79dd48f08a1da2da100985fedf9ed339e0a8e2275de02555a95e795088644a66e8f11ffd510d6c5af8ed03628ae905e6def936fa95e80834c9476ce70ff3fd9e1361bc15dd472830dd328c99fced73ecfc73da66889bbbe6a96c43f194c76066dfa94e182e07806992fd6b371cc12cdd45a0f5d44ffcee2dd16814fb587fbfd4b342a8042a0fb898f97b336ae6b5fd27a7ebd557429dc5e2822dcea5d1094f5ec0174daa470fcc8c89b4f52ae834f87ffcb6d83a85624c5a69d6198f1720c21be5e1da5aa0613522579bc90ba12e9b73aa3a56245f8684bcd395782683b17a4c4b1131b2113cf245854a63d06cfac1f19ff1094793ad8e99378662b87903a6353274a41c6b345d2d4c993dcb68b313b2339f9492bc07bad36b2477400f0f80f646052b42e6ca7a3a6ef7e5266c03c8c091756183ceaa351b2a44493da1596132f919a29e067fdbd66441569c313ebebd826e9c4643826d17963b9727c1f1378a42c5c7f26212ba174dc1268646c0c9980ac7ca16cbe27a7d5321cc44c980a3a5e2e50db88e355fda99ae3eae3e7e12e3ec4fd79a5e29a41cd8c0ad7da2ae90d4a8365feec588ab41ef67d36298e0577a85de9806f6eccabe0ff6488c8fb6df887dd51b12cd1c372d2f06788bba8a2f88f2853b9869009f753ec99fa082a0071c115ac01ade9b0649ae82df1150e887c75c9cfe95c4f4f404376b148bef638870e6908a028f964a58b3fd94cd221444a273fa97605b1357b20cfeb100847183d97b3647f1247cd7eb67da10ca36017d76338efadeee8124784e206e0c3c6deca8127669c91cb1205fde2d29baa39c7a119eac361076d4c8998b9c653c401fcc1f03a1ebd57ae1414e52d76afec18062cc6feb0b0292378f15d0ab41d2ec1fa8d0a8dbd01b323981c9fcc59b5b41b2d01c7a1e406ced889c0ff64686cbdc7f98201d8791fe08dc9a6faacd41d961e337671445e3da7006aaeaf386134a2fd309f065187205172f0ac0b1ffe17de4a0fb22058ff8a5a9d0b1fb9630419b7709af5773289864028134c57ae065500f38051e2d781faff282f8ca7c896bd2aa2e4f01527788ea978a0a5f19a9f4fe9e78b7fe9efd73d5da3528c4ba23d86e89aa938320a811c5ad0d828a93dd86387296bef16ceed1e70a9e18c5c02d47118170d3a2ac0a776c893f6eb8da54cc1738bde15d7e23605d8895324a98f8c17a4bb774cfe002f7bcebfc807c0837344ca76d607661e789adce40f01707793b0c163cfa9aff0083a487c1af47848b0b05efbcf4c3a0c77338bf81dd32173c01e4af98d790cc86eda7365e268a95d8a2c734dbceb2ff82162363a63dccb6416e9482ee1f9a64695b4375403b0f68e2aa0a8ae121792161341661c4a53a67b858389e0698b33a6c56fb34b62a5411540218cad15bcc978fdae6ab66216dca18b3d4fb51d4e72504c91479eda76cdc95bf3112b3ea01747212a0c6f8228e7e3f86a0885d51d4b6e937c16e6d0b3b46259f4d70ce9b33bea4fc3838faf840a240b10822a477b095c85a5bf74558da04c7e36b1c54a9b0e0b732558f0695e8d29a9d054c386ef0f812694fdb22d872fbe0b4e4344169dd78b643a42f23fa4342f55d297e68fcb8d3f2ffd29900f3374dc6663f0bb7db637a450a3b4a2c63557e4f5f1212157d0bf2dabc7de886e1d1095c154ea05cedd2b7838f28f03884c30a5c63a8c99cc43657f4dced28f0d92579802258c7dfc70c83b03d83487dde9472e7765a3ceef583a3dfab12cf3bcf32401cb0a6a09392e606456a7e1acf12b711fec7f22f3d51fc549cd3289fb961285948265e211ddb85fd1037ec8d060743d1ffefc148895414e07eabc4f95b9bd1ffcc057d0a8d4c3488a984b75bdf017f006e5ac2b71d3519322504fbce8ad1ae172f9a5b2b105bd111a79246fcb54f55a57256fe96aac98b033535dbe144c3ad04048d5348097f0248685f75d8f9c58dfe84168bac388b5d1bd8d884484bd953f1f136d7f04bfd4af46f8625f38d342a97b668a20072aa8317a0c9299d437f269aca920b8a58e9d580e20723add414b4fe07ec9be38d93a76ab450efd1e96b2a18995afc14351e369b30c9b28656469c1ed41c7d33c7b86801f41d707df271c72cbeae60b0e3ec86acd4511845310ba845a01c8427523ac5af51476479ee4633bd4ebe080d584be0d023b0bb03c8443a7491c207ed8786a9d804b6a94ab0c41501ab04c9f0663f681e7e10dbb718498c8bda5fbff86e8e534a1e5fd011c90f6879b93207a3f2566f524feb0c16c4360643c6c23bb131968d1491f0d21d509045637f5d02bd20b3d28e7c989cd3e9cfff2f3dc8ce5f76c56ae14a1220c077dc1b173ac0cfae072a35cc92f2b8b985c0d6c21bc052d10b65aa233c00821b17445f2b04170bf38bd1e1d6ec52b61d2d162f54601a3d6e12936ae46d409ad2198cfb2f094736d5896f3faf34517c17f8264762d4a6f2d17eb157b3b1ffd6ec2d6829013f3b3dc3ef27d2298db15840abf1809ddb188770ad8373a031d5a572c380e2f85e6b5e5a0404ec414542519d1826d1e874f119b7b83c5c157f724b30a6c3c18b445304d395d4dd6f7eccfa519dec4dd8fda16f2054bed2eacb11c1d1b4a9494fdff2ce8b54ca908707cfa0e96d977563727d9385da38f0e0ddfbba10031a2d3757e6faa6118a4eb9ab54450b2103b34623f301e4ad5360fe3b2a05a1b55cd1a1fe5c1c911782a3ed8bcc29b53a1fb5d99324a1da0ab7b4dae48df6640daedfff7acdb6e621f81a76b172b5699b4018f7f996fb2539be7ef95fc5bf2dc7fb4a6511366474029ed91dd99ec34bd2c0f8c096835325a0e216291e5301f119b9d831865bd0ed0a445917a540c3698e6e06e55c27e59ce94e1f8b119d0279aa06d1237a1d709bdbca0363d6c3219e653eecdf1a1016fb13fbd0b3f80735954bbb4ea2bffdac9ee11854ad30a733997f79a8f59594d357ad08818cec3385d5652933461ac3b26fb9e4d8df02d253f703e92ae9b7a05b696d75605e0a2c0e4f5c481783e6c8a59b4d6a7e2360e26db6201a416a2dec90007f83386daeee798496c6f941032a3b9745dd0e72d2be77dce16b22b8b68c6ac1903ef8b6b1e6abffc65534e222da57549934de3d3fd0c7da04c790db9dbce14c2c45d1f51931fb9563a031b0a6148951ac6d3fc3f360b1810827498ced61efb766d7d1679d5c3e2ee2eeed5a5c9a366ec61d1e32437369d95f96c3a4d6913a2c111cfecde15cffdd6a78a64a4dfc1c3b74f4058939d34d97be8df75447e7e021a2b528a636c1bed9a25de0fa7dacb9a093fb8f7f063b357c4757815ec01b97be7774c09d4ec0369e623be909d0f979b1ff0f6ecad14aafab284e1c7492398b50c93009c3e65c9d535a3d767acd6bb2690b2cd794bbe40227638a1e174f16adda2e62ff72893842058007c3000b05fed4796c01a8c50b97d83c8843321614a679f9f1d72959db3c79f808cf38e415ebcc5c8ccfc07ebf95ffab1b99350617b6017b3a624b29ca1f401ae6abd3d1b0d6050ee4e6cbc61c95f90e0ea3f814001107e52c954adeaf9248a62f2b51c6e198a1b7bd421dd6f2d80fb3499770b00907677071d71e66cfa9de3d59ea470cd58b2074472918c956e5add36f557e76e7784ef1befb89406fcc36e28832b073c1e2a395ea3c7dff9dc77ea6eef244c11cd498971a510bf28c90b97a288e9100687e97d1a1e8c3f039248bd7cfc1b16cc0c7f4ef40c71646bd0df19af2abf0d274e2cbdffc63d6bf3ecbc0e2ff79af904242fa42d2cc7af302bbf320cadfe68b4c66d8a6fdf75adb5d782c857fe99fd3d99210d0a181ca7229b8da5f1aad81d3556a40b62e51121171f9a0ab0599ad210a0059372748952c522190877a7eeb09811b0b9e65152e399bf74c318c18ba8929fb18a28ef4f1766a910dbe628e8c38d22e9228bf40c7c42bf014001b231e09f9b255dbf5f2950117547ce95f12128031404e77733420965fd91ecca2b3b03940f717a943b29d759eabf8acbeb56095dc76cc1332e831e8fe35ae3abd10feb389314a51e54f429c929ac41a82d62e83872ad2c7b91d24ecf5383db764ed131a4d76b8663e9c34bcf8a43f156aeb215dff2d98164f5860cf88fc32ff0882ee7740eac735c4ab4e4aa27266715d9ec6267e62a75893b41ad92280eb396cbf9035798ca3c79ad4b82190e6e4f0c8e5fcb686d524a9da491ba720c387f152972be8ecb677893f8bf5fb03ed92a3a6fc4b423668c</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
 </div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></p></div><div class="share"><span>Share</span>&nbsp;<span class="soc"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST=' rel="external nofollow noreferrer"http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></span><span class="soc"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f=' rel="external nofollow noreferrer"http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></span><span class="soc"><a class="fa fa-twitter" target="_blank" rel="noopener external nofollow noreferrer" href="http://twitter.com/home?status=https://moiseak.github.io/posts/22555b07.html%20Moiads%20随想(一)"></a></span></div><div class="pagination"><p class="clearfix"><span class="pre pagbuttons"><a role="navigation" href="/posts/8d64c065.html" title="随想(二)"><i class="fa fa-angle-double-left"></i>&nbsp;Previous post: 随想(二)</a></span></p></div></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2024&nbsp;<a target="_blank" href="https://moiseak.github.io" rel="noopener noreferrer">moiads</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script></body></html>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.svg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Keep Theme
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                HOME
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                ARCHIVES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                            HOME
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            ARCHIVES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box encrypt">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        随想(一)
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="https://cdn.jsdelivr.net/gh/moiseak/blogimg@main/img/master1200.jpg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Keep Team</span>
+                                
+                                    <span class="author-badge">Lv2</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-09-06 22:17:23</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime" data-updated="Fri Nov 01 2024 15:30:01 GMT+0800">2024-11-01 15:30:01</span>
+            </span>
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/%E9%9A%8F%E6%83%B3/">随想</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                        <div class="post-encrypt-box border-box"
+                             data-secret=""
+                             data-iv=""
+                             data-ep=""
+                             data-content=""
+                        >
+                            <input type="password" class="password-input border-box" placeholder="Please enter password ...">
+                        </div>
+                        <div class="post"></div>
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/posts/8d64c065.html"
+                                   title="随想(二)"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">随想(二)</span>
+                                        <span class="post-nav-item">Prev posts</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+        &copy;&nbsp;<span>2020</span>&nbsp;-&nbsp;2024
+        
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Keep Team</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        Powered by&nbsp;<a target="_blank" href="https://hexo.io" rel="external nofollow noreferrer">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep" rel="external nofollow noreferrer">Keep</a>
+    </div>
+
+    
+
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+            <li class="status-item flex-center post-lock border-box"
+                data-tooltip-content="Re-encryption"
+            >
+                <i class="fa-solid fa-lock"></i>
+                <i class="fa-solid fa-lock-open"></i>
+            </li>
+        
+
+        <!-- PC TOC show toggle -->
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+
+    <!-- tablet toc -->
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>
