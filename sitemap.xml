@@ -155,14 +155,14 @@
 
   
   <url>
-    <loc>https://moiseak.github.io/tags/Python/</loc>
+    <loc>https://moiseak.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2024-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://moiseak.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
+    <loc>https://moiseak.github.io/tags/Python/</loc>
     <lastmod>2024-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -192,13 +192,6 @@
 
   
   <url>
-    <loc>https://moiseak.github.io/categories/%E9%9A%8F%E6%83%B3/</loc>
-    <lastmod>2024-11-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://moiseak.github.io/categories/CS61A/</loc>
     <lastmod>2024-11-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -214,6 +207,13 @@
   
   <url>
     <loc>https://moiseak.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2024-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://moiseak.github.io/categories/%E9%9A%8F%E6%83%B3/</loc>
     <lastmod>2024-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
