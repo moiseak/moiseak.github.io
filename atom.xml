@@ -42,10 +42,22 @@
     <link href="https://moiseak.github.io/posts/7a935cfb.html"/>
     <id>https://moiseak.github.io/posts/7a935cfb.html</id>
     <published>2024-11-02T06:27:49.000Z</published>
-    <updated>2024-11-04T12:33:06.594Z</updated>
+    <updated>2024-11-05T03:59:18.412Z</updated>
     
     
-    <summary type="html">最小生成树</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;生成树&quot;&gt;生成树&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;存在图中的所有顶点&lt;/li&gt;
+&lt;li&gt;每个节点都已连接&lt;/li&gt;
+&lt;li&gt;无环&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2</summary>
+        
+      
     
     
     
@@ -61,10 +73,19 @@
     <link href="https://moiseak.github.io/posts/66e3f11.html"/>
     <id>https://moiseak.github.io/posts/66e3f11.html</id>
     <published>2024-11-01T07:30:54.000Z</published>
-    <updated>2024-11-04T12:33:26.156Z</updated>
+    <updated>2024-11-05T03:59:13.632Z</updated>
     
     
-    <summary type="html">一些关于Hashing的笔记</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;目的&quot;&gt;目的&lt;/h2&gt;
+&lt;p&gt;为了得到更快的添加数据和判断该数据结构是否包含某数据的速度(即add&amp;amp;contain的速度).&lt;/p&gt;
+&lt;h2 id=&quot;尝试&quot;&gt;尝试&lt;/h2&gt;
+&lt;h3</summary>
+        
+      
     
     
     
@@ -82,10 +103,19 @@
     <link href="https://moiseak.github.io/posts/91e85d6d.html"/>
     <id>https://moiseak.github.io/posts/91e85d6d.html</id>
     <published>2024-10-28T09:59:00.000Z</published>
-    <updated>2024-11-04T12:33:30.955Z</updated>
+    <updated>2024-11-05T03:59:05.447Z</updated>
     
     
-    <summary type="html">Gitlet: 从零开始完成一个mini-git</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;个人完成情况: 拿了满分, EC没做.&lt;br&gt;
+花费时间: 一周多, 40个小时左右,debug非常花时间.&lt;br&gt;
+项目地址: &lt;a class=&quot;link&quot;</summary>
+        
+      
     
     
     
@@ -101,10 +131,17 @@
     <link href="https://moiseak.github.io/posts/f7f583c.html"/>
     <id>https://moiseak.github.io/posts/f7f583c.html</id>
     <published>2024-10-25T11:53:36.000Z</published>
-    <updated>2024-11-04T12:33:45.231Z</updated>
+    <updated>2024-11-05T03:59:00.719Z</updated>
     
     
-    <summary type="html">周记</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;java&quot;&gt;java&lt;/h2&gt;
+&lt;h4</summary>
+        
+      
     
     
     
@@ -118,10 +155,18 @@
     <link href="https://moiseak.github.io/posts/8e10cd7.html"/>
     <id>https://moiseak.github.io/posts/8e10cd7.html</id>
     <published>2024-10-15T14:55:05.000Z</published>
-    <updated>2024-11-04T12:33:49.060Z</updated>
+    <updated>2024-11-05T03:58:57.376Z</updated>
     
     
-    <summary type="html">手写链表和循环数组并应用</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这个proj还是有难度的,不过一个proj就能融合Java的大部分知识,很值得一做.&lt;/p&gt;
+&lt;h1&gt;deque&lt;/h1&gt;
+&lt;h2</summary>
+        
+      
     
     
     
@@ -161,10 +206,18 @@
     <link href="https://moiseak.github.io/posts/7fe63c41.html"/>
     <id>https://moiseak.github.io/posts/7fe63c41.html</id>
     <published>2024-10-11T04:22:47.000Z</published>
-    <updated>2024-11-04T12:33:56.591Z</updated>
+    <updated>2024-11-05T03:58:51.397Z</updated>
     
     
-    <summary type="html">2048</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;关于这个项目,我们要完成的是一个2048游戏,我们有四个任务需要完成.&lt;br&gt;
+这四个任务的难度算是递增吧,他说最后一个的推荐时间是三到十个小时,其实是用不了那么多的,不用害怕.&lt;/p&gt;
+&lt;h2</summary>
+        
+      
     
     
     
@@ -180,10 +233,17 @@
     <link href="https://moiseak.github.io/posts/91a50de5.html"/>
     <id>https://moiseak.github.io/posts/91a50de5.html</id>
     <published>2024-10-04T15:11:27.000Z</published>
-    <updated>2024-11-04T12:34:00.547Z</updated>
+    <updated>2024-11-05T03:58:46.450Z</updated>
     
     
-    <summary type="html">函数式编程</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Scheme入门&quot;&gt;Scheme入门&lt;/h2&gt;
+&lt;h2</summary>
+        
+      
     
     
     
@@ -201,10 +261,18 @@
     <link href="https://moiseak.github.io/posts/4eba9996.html"/>
     <id>https://moiseak.github.io/posts/4eba9996.html</id>
     <published>2024-09-27T11:18:45.000Z</published>
-    <updated>2024-11-04T12:34:03.673Z</updated>
+    <updated>2024-11-05T03:58:41.217Z</updated>
     
     
-    <summary type="html">递归</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;Recursive Leap of Faith&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;若要让我回忆在CS61A-Python部分最印象深刻的知识是什么, 那一定是 Recursive Leap of Faith . 我至今仍清楚的记得那个下午我用List</summary>
+        
+      
     
     
     
@@ -247,10 +315,17 @@
     <link href="https://moiseak.github.io/posts/22555b07.html"/>
     <id>https://moiseak.github.io/posts/22555b07.html</id>
     <published>2024-09-06T14:17:23.000Z</published>
-    <updated>2024-11-04T12:34:09.262Z</updated>
+    <updated>2024-11-05T03:58:10.940Z</updated>
     
     
-    <summary type="html">随便写一下</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;总结&quot;&gt;总结&lt;/h2&gt;
+&lt;p&gt;经过一周的折腾和思考，也终于在今天把要学的东西整理好了，这不是说最近没学习，而是最近学得很乱，什么都学一点，主要还是 61A 和 61B 的学习版本没定下来吧，之前由于我的精神强迫症，想着开学后跟着课程表走的，但是…</summary>
+        
+      
     
     
     
