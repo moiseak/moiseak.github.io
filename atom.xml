@@ -6,7 +6,7 @@
   <link href="https://moiseak.github.io/atom.xml" rel="self"/>
   
   <link href="https://moiseak.github.io/"/>
-  <updated>2024-11-04T14:13:45.809Z</updated>
+  <updated>2024-11-05T05:11:54.210Z</updated>
   <id>https://moiseak.github.io/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
@@ -16,17 +16,19 @@
     <link href="https://moiseak.github.io/posts/cebdab86.html"/>
     <id>https://moiseak.github.io/posts/cebdab86.html</id>
     <published>2024-11-02T12:48:36.000Z</published>
-    <updated>2024-11-04T14:13:45.809Z</updated>
+    <updated>2024-11-05T05:11:54.210Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;今天字节青训营开始了,难绷三十分钟速通Go.&lt;br&gt;
+    <summary type="html">&lt;p&gt;似乎我的博客缺少一些生活气息,我的生活只剩下CS了吗?&lt;br&gt;
+好像的确是这样.&lt;/p&gt;
+&lt;p&gt;今天字节青训营开始了.&lt;br&gt;
 上一个案例还在写猜数字,下面就开始写socket协议了…&lt;br&gt;
 这一个月应该会花很多时间在go上.&lt;/p&gt;
-&lt;p&gt;CS61B的算法部分打算慢慢学,然后学一点就写一点博客,毕竟我二叉树还没刷完,算法不急着赶,慢慢看就可以</summary>
+&lt;p&gt;CS61B的算法部分打算慢慢学</summary>
         
       
     
@@ -131,7 +133,7 @@
     <link href="https://moiseak.github.io/posts/f7f583c.html"/>
     <id>https://moiseak.github.io/posts/f7f583c.html</id>
     <published>2024-10-25T11:53:36.000Z</published>
-    <updated>2024-11-05T03:59:00.719Z</updated>
+    <updated>2024-11-05T04:31:04.861Z</updated>
     
     
       
@@ -182,7 +184,7 @@
     <link href="https://moiseak.github.io/posts/f397e04e.html"/>
     <id>https://moiseak.github.io/posts/f397e04e.html</id>
     <published>2024-10-12T07:33:22.000Z</published>
-    <updated>2024-11-04T13:08:17.412Z</updated>
+    <updated>2024-11-05T04:32:39.460Z</updated>
     
     
       
@@ -190,7 +192,7 @@
         
         
     <summary type="html">&lt;h2 id=&quot;回顾&quot;&gt;回顾&lt;/h2&gt;
-&lt;p&gt;国庆七天没有回家,猛猛卷了七天,把61a完结了,但是scheme那个项目做了一半不想做了,可能寒假有空会写写,怎么说呢, 写得很难受,很多地方都特别懵,</summary>
+&lt;p&gt;国庆七天没有回家,猛猛写了七天,把61a完结了,但是scheme那个项目做了一半不想做了,可能寒假有空会写写.怎么说呢, 写得很难受,很多地方都特别懵,</summary>
         
       
     
@@ -250,9 +252,9 @@
     <category term="CS61A" scheme="https://moiseak.github.io/categories/CS61A/"/>
     
     
-    <category term="Scheme" scheme="https://moiseak.github.io/tags/Scheme/"/>
-    
     <category term="Python" scheme="https://moiseak.github.io/tags/Python/"/>
+    
+    <category term="Scheme" scheme="https://moiseak.github.io/tags/Scheme/"/>
     
   </entry>
   
@@ -279,9 +281,9 @@
     <category term="CS61A" scheme="https://moiseak.github.io/categories/CS61A/"/>
     
     
-    <category term="Python" scheme="https://moiseak.github.io/tags/Python/"/>
-    
     <category term="算法" scheme="https://moiseak.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="Python" scheme="https://moiseak.github.io/tags/Python/"/>
     
   </entry>
   
