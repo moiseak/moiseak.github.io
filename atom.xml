@@ -6,7 +6,7 @@
   <link href="https://moiseak.github.io/atom.xml" rel="self"/>
   
   <link href="https://moiseak.github.io/"/>
-  <updated>2024-11-08T08:15:21.275Z</updated>
+  <updated>2024-11-08T13:28:43.833Z</updated>
   <id>https://moiseak.github.io/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
@@ -16,15 +16,15 @@
     <link href="https://moiseak.github.io/posts/afafbad8.html"/>
     <id>https://moiseak.github.io/posts/afafbad8.html</id>
     <published>2024-11-08T07:35:33.000Z</published>
-    <updated>2024-11-08T08:15:21.275Z</updated>
+    <updated>2024-11-08T13:28:43.833Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;由于平时和室友基本都是12点左右上床熄灯，而我又要在床上写写总结，逛逛b站，经常导致我基本是1点左右睡着。而早八会毁了这一切。😡&lt;br&gt;
-其实这学期是有四天早八的，两个可以翘掉，便是剩下两节英语课，英语！英语！每周就两节课而已。一个在大学基本无法从课堂上学到任何东西学科，</summary>
+    <summary type="html">&lt;p&gt;由于平时和室友基本都是12点左右上床熄灯，而我又要在床上写写总结，逛逛b站，经常导致我基本是1点左右睡着。&lt;br&gt;
+其实这学期是有四天早八的，两个可以翘掉，便是剩下两节英语课，英语！英语！每周就两节课而已。一个在大学基本无法从课堂上学到任何东西学科，开课的目的除了养活一堆老</summary>
         
       
     
@@ -271,9 +271,9 @@
     <category term="CS61A" scheme="https://moiseak.github.io/categories/CS61A/"/>
     
     
-    <category term="Python" scheme="https://moiseak.github.io/tags/Python/"/>
-    
     <category term="Scheme" scheme="https://moiseak.github.io/tags/Scheme/"/>
+    
+    <category term="Python" scheme="https://moiseak.github.io/tags/Python/"/>
     
   </entry>
   
@@ -300,9 +300,9 @@
     <category term="CS61A" scheme="https://moiseak.github.io/categories/CS61A/"/>
     
     
-    <category term="算法" scheme="https://moiseak.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
     <category term="Python" scheme="https://moiseak.github.io/tags/Python/"/>
+    
+    <category term="算法" scheme="https://moiseak.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
