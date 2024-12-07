@@ -6,22 +6,119 @@
   <link href="https://moiseak.github.io/atom.xml" rel="self"/>
   
   <link href="https://moiseak.github.io/"/>
-  <updated>2024-11-11T11:00:45.178Z</updated>
+  <updated>2024-12-07T09:52:08.492Z</updated>
   <id>https://moiseak.github.io/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Spring学习笔记</title>
-    <link href="https://moiseak.github.io/posts/52ba89f4.html"/>
-    <id>https://moiseak.github.io/posts/52ba89f4.html</id>
-    <published>2024-11-11T11:00:54.000Z</published>
-    <updated>2024-11-11T11:00:45.178Z</updated>
+    <title>周记（七）</title>
+    <link href="https://moiseak.github.io/posts/495b8f5c.html"/>
+    <id>https://moiseak.github.io/posts/495b8f5c.html</id>
+    <published>2024-12-07T09:48:33.000Z</published>
+    <updated>2024-12-07T09:52:08.492Z</updated>
     
+    
+    <summary type="html">周记</summary>
+    
+    
+    
+    <category term="周记" scheme="https://moiseak.github.io/categories/%E5%91%A8%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>滑动窗口</title>
+    <link href="https://moiseak.github.io/posts/50cab45.html"/>
+    <id>https://moiseak.github.io/posts/50cab45.html</id>
+    <published>2024-11-26T07:46:33.000Z</published>
+    <updated>2024-11-26T08:15:56.702Z</updated>
+    
+    
+    <summary type="html">滑动窗口笔记</summary>
     
     
     
     <category term="学习笔记" scheme="https://moiseak.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="算法" scheme="https://moiseak.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>效率&amp;时间</title>
+    <link href="https://moiseak.github.io/posts/797198ce.html"/>
+    <id>https://moiseak.github.io/posts/797198ce.html</id>
+    <published>2024-11-25T09:35:33.000Z</published>
+    <updated>2024-11-26T08:17:35.433Z</updated>
+    
+    
+    <summary type="html">过于重视效率反而会降低效率</summary>
+    
+    
+    
+    <category term="随想" scheme="https://moiseak.github.io/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Spring（二）</title>
+    <link href="https://moiseak.github.io/posts/2d3a27c0.html"/>
+    <id>https://moiseak.github.io/posts/2d3a27c0.html</id>
+    <published>2024-11-23T10:35:33.000Z</published>
+    <updated>2024-11-25T09:30:14.712Z</updated>
+    
+    
+    <summary type="html">AOP</summary>
+    
+    
+    
+    <category term="学习笔记" scheme="https://moiseak.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Java" scheme="https://moiseak.github.io/tags/Java/"/>
+    
+    <category term="Spring" scheme="https://moiseak.github.io/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring（一）</title>
+    <link href="https://moiseak.github.io/posts/1d2ccb18.html"/>
+    <id>https://moiseak.github.io/posts/1d2ccb18.html</id>
+    <published>2024-11-17T12:35:33.000Z</published>
+    <updated>2024-11-23T10:35:53.904Z</updated>
+    
+    
+    <summary type="html">IoC容器基础</summary>
+    
+    
+    
+    <category term="学习笔记" scheme="https://moiseak.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Java" scheme="https://moiseak.github.io/tags/Java/"/>
+    
+    <category term="Spring" scheme="https://moiseak.github.io/tags/Spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>周记(六)</title>
+    <link href="https://moiseak.github.io/posts/bf6eaed4.html"/>
+    <id>https://moiseak.github.io/posts/bf6eaed4.html</id>
+    <published>2024-11-16T08:35:33.000Z</published>
+    <updated>2024-11-16T09:03:51.991Z</updated>
+    
+    
+    <summary type="html">周记</summary>
+    
+    
+    
+    <category term="周记" scheme="https://moiseak.github.io/categories/%E5%91%A8%E8%AE%B0/"/>
     
     
   </entry>
@@ -31,7 +128,7 @@
     <link href="https://moiseak.github.io/posts/afafbad8.html"/>
     <id>https://moiseak.github.io/posts/afafbad8.html</id>
     <published>2024-11-08T07:35:33.000Z</published>
-    <updated>2024-11-16T05:55:53.423Z</updated>
+    <updated>2024-11-16T07:42:47.853Z</updated>
     
     
     <summary type="html">早八有感</summary>
@@ -48,16 +145,10 @@
     <link href="https://moiseak.github.io/posts/cebdab86.html"/>
     <id>https://moiseak.github.io/posts/cebdab86.html</id>
     <published>2024-11-02T12:48:36.000Z</published>
-    <updated>2024-11-11T06:29:49.643Z</updated>
+    <updated>2024-11-16T08:18:24.383Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2</summary>
-        
-      
+    <summary type="html">周记</summary>
     
     
     
@@ -71,22 +162,10 @@
     <link href="https://moiseak.github.io/posts/7a935cfb.html"/>
     <id>https://moiseak.github.io/posts/7a935cfb.html</id>
     <published>2024-11-02T06:27:49.000Z</published>
-    <updated>2024-11-05T03:59:18.412Z</updated>
+    <updated>2024-11-16T06:32:30.095Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;生成树&quot;&gt;生成树&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;存在图中的所有顶点&lt;/li&gt;
-&lt;li&gt;每个节点都已连接&lt;/li&gt;
-&lt;li&gt;无环&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2</summary>
-        
-      
+    <summary type="html">最小生成树</summary>
     
     
     
@@ -102,19 +181,10 @@
     <link href="https://moiseak.github.io/posts/66e3f11.html"/>
     <id>https://moiseak.github.io/posts/66e3f11.html</id>
     <published>2024-11-01T07:30:54.000Z</published>
-    <updated>2024-11-08T07:17:55.752Z</updated>
+    <updated>2024-11-16T06:33:31.095Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;目的&quot;&gt;目的&lt;/h2&gt;
-&lt;p&gt;为了得到更快的添加数据和判断该数据结构是否包含某数据的速度(即add&amp;amp;contain的速度).&lt;/p&gt;
-&lt;h2 id=&quot;尝试&quot;&gt;尝试&lt;/h2&gt;
-&lt;h3</summary>
-        
-      
+    <summary type="html">HashMap</summary>
     
     
     
@@ -132,19 +202,10 @@
     <link href="https://moiseak.github.io/posts/91e85d6d.html"/>
     <id>https://moiseak.github.io/posts/91e85d6d.html</id>
     <published>2024-10-28T09:59:00.000Z</published>
-    <updated>2024-11-08T07:18:31.304Z</updated>
+    <updated>2024-11-16T06:33:44.646Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;个人完成情况: 拿了满分, EC没做.&lt;br&gt;
-花费时间: 一周多, 40个小时左右,debug非常花时间.&lt;br&gt;
-项目地址: &lt;a class=&quot;link&quot;</summary>
-        
-      
+    <summary type="html">Gitlet</summary>
     
     
     
@@ -160,17 +221,10 @@
     <link href="https://moiseak.github.io/posts/f7f583c.html"/>
     <id>https://moiseak.github.io/posts/f7f583c.html</id>
     <published>2024-10-25T11:53:36.000Z</published>
-    <updated>2024-11-08T07:33:53.271Z</updated>
+    <updated>2024-11-16T06:33:54.316Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;java&quot;&gt;java&lt;/h2&gt;
-&lt;h4</summary>
-        
-      
+    <summary type="html">周记</summary>
     
     
     
@@ -184,18 +238,10 @@
     <link href="https://moiseak.github.io/posts/8e10cd7.html"/>
     <id>https://moiseak.github.io/posts/8e10cd7.html</id>
     <published>2024-10-15T14:55:05.000Z</published>
-    <updated>2024-11-05T03:58:57.376Z</updated>
+    <updated>2024-11-16T06:34:40.097Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这个proj还是有难度的,不过一个proj就能融合Java的大部分知识,很值得一做.&lt;/p&gt;
-&lt;h1&gt;deque&lt;/h1&gt;
-&lt;h2</summary>
-        
-      
+    <summary type="html">手写链表/数组</summary>
     
     
     
@@ -211,17 +257,10 @@
     <link href="https://moiseak.github.io/posts/f397e04e.html"/>
     <id>https://moiseak.github.io/posts/f397e04e.html</id>
     <published>2024-10-12T07:33:22.000Z</published>
-    <updated>2024-11-08T07:33:37.811Z</updated>
+    <updated>2024-11-16T06:34:43.836Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;回顾&quot;&gt;回顾&lt;/h2&gt;
-&lt;p&gt;国庆七天没有回家,猛猛写了七天,把61a完结了,但是scheme那个项目做了一半不想做了,可能寒假有空会写写.怎么说呢, 写得很难受,很多地方都特别懵,</summary>
-        
-      
+    <summary type="html">周记</summary>
     
     
     
@@ -235,18 +274,10 @@
     <link href="https://moiseak.github.io/posts/7fe63c41.html"/>
     <id>https://moiseak.github.io/posts/7fe63c41.html</id>
     <published>2024-10-11T04:22:47.000Z</published>
-    <updated>2024-11-05T03:58:51.397Z</updated>
+    <updated>2024-11-16T06:34:52.416Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;关于这个项目,我们要完成的是一个2048游戏,我们有四个任务需要完成.&lt;br&gt;
-这四个任务的难度算是递增吧,他说最后一个的推荐时间是三到十个小时,其实是用不了那么多的,不用害怕.&lt;/p&gt;
-&lt;h2</summary>
-        
-      
+    <summary type="html">2048</summary>
     
     
     
@@ -262,17 +293,10 @@
     <link href="https://moiseak.github.io/posts/91a50de5.html"/>
     <id>https://moiseak.github.io/posts/91a50de5.html</id>
     <published>2024-10-04T15:11:27.000Z</published>
-    <updated>2024-11-05T03:58:46.450Z</updated>
+    <updated>2024-11-16T06:35:05.640Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Scheme入门&quot;&gt;Scheme入门&lt;/h2&gt;
-&lt;h2</summary>
-        
-      
+    <summary type="html">函数式编程</summary>
     
     
     
@@ -290,18 +314,10 @@
     <link href="https://moiseak.github.io/posts/4eba9996.html"/>
     <id>https://moiseak.github.io/posts/4eba9996.html</id>
     <published>2024-09-27T11:18:45.000Z</published>
-    <updated>2024-11-05T03:58:41.217Z</updated>
+    <updated>2024-11-16T06:35:11.970Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h1&gt;Recursive Leap of Faith&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;若要让我回忆在CS61A-Python部分最印象深刻的知识是什么, 那一定是 Recursive Leap of Faith . 我至今仍清楚的记得那个下午我用List</summary>
-        
-      
+    <summary type="html">递归</summary>
     
     
     

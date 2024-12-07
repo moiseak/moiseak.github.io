@@ -59,6 +59,7 @@ keep-mobile()
   color: var(--text-color-3) !important;
 }
 .page-container .page-main-content .page-main-content-middle {
+  z-index: $z-index-2;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -99,6 +100,7 @@ keep-tablet()
   position: fixed;
   right: 0;
   bottom: 1.6rem;
+  z-index: $z-index-3;
   box-sizing: border-box;
   padding-right: 1rem;
 keep-tablet()
