@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Zephyr">
+    
+    <title>
+        
+            CS61A(一) |
+        
+        Zephyr&#39;s Blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/moiseak/blogimg@main/img/hun.jpg">
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/fontawesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/regular.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/solid.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/brands.min.css">
+    
+        
+            
+                
+<link rel="stylesheet" href="/css/font.css">
+
+            
+        
+            
+                
+<link rel="stylesheet" href="/css/custom-1.css">
+
+            
+        
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"moiseak.github.io","root":"/","language":"zh-CN","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"Zephyr's Blog","author":"Zephyr","favicon":"https://cdn.jsdelivr.net/gh/moiseak/blogimg@main/img/hun.jpg"},"menu":{"archives":"/archives","about":"/about"},"first_screen":{"enable":true,"background_img":"https://raw.githubusercontent.com/moiseak/blogimg/main/img/while.jpg","background_img_dark":"https://cdn.jsdelivr.net/gh/moiseak/blogimg@main/img/hun.jpg","description":"不要温和地走进那个良夜。","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/moiseak"}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"created"},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":"https://cdn.jsdelivr.net/gh/moiseak/blogimg@main/img/mm_facetoface_collect_qrcode_1730722447285.png","text":"请作者喝咖啡","icon":null}},"code_block":{"tools":{"enable":true,"style":"mac"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":false,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":false}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"gitalk","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":"moiseak","github_admins":null,"repository":"moiseak.github.io","client_id":"Ov23liVVjbnV50KHXLgl","client_secret":"4793c4b0c902c60168c579271fb612dc74ff6538","proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":true},"lazyload":{"enable":true},"cdn":{"enable":true,"provider":"jsdelivr"},"pjax":{"enable":false},"footer":{"since":2024,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":["/css/font.css","/css/custom-1.css"],"js":[null]},"root":"","source_data":{},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+            <a class="site-name border-box" href="/">
+               Zephyr&#39;s Blog
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                关于
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                            关于
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        CS61A(一)
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Zephyr</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-09-27 19:18:45</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Fri Jan 10 2025 15:09:35 GMT+0800">2025-01-10 15:09:35</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/CS61A/">CS61A</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E7%AE%97%E6%B3%95/">算法</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Python/">Python</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h1>Recursive Leap of Faith</h1>
+<blockquote>
+<p>若要让我回忆在CS61A-Python部分最印象深刻的知识是什么, 那一定是 Recursive Leap of Faith . 我至今仍清楚的记得那个下午我用List Comprehensions and Tree Recursion随手用两行代码就解决一个问题后, 回过神来: “我也…变得稍微有点厉害了吧.”</p>
+</blockquote>
+<p><em><strong>请确保你已经有Python关于Functions, Control, Sequences and OOP的基础知识</strong></em></p>
+<h2 id="入门">入门</h2>
+<p>为什么叫做"信仰之跃"? 我认为是: <em>信任你的递归函数, 你让它做什么, 它就一定会做到, 无论过程如何.</em></p>
+<p>举个简单的例子:</p>
+<h3 id="1-sum-digits">1.<code>sum_digits</code></h3>
+<p>现在要求编写一个计算一个正整数所有位上的数字的和, 比如123所有位的和就是1+2+3=6.</p>
+<p><strong>那现在想一想, 你希望你编写的函数做到什么?</strong></p>
+<p>我们直接定义我们编写的函数能够计算一个正整数所有位上的数字的和, 但肯定不能直接把这个正整数放进去, 所以一个很自然的想法出现了:<br>
+<strong>用我们定义的函数计算前面n-1位数字的和再加上最后一位不就可以了:</strong></p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">sum_digits(all_but_last) + last</span><br></pre></td></tr></tbody></table></figure>
+<p>但我们很轻易就能发现这里还有一种<strong>特殊情况</strong>: 当这个正整数是个位数的时候, 不需要计算, 直接返回就可以了.<br>
+于是我们可以把完整的代码写出来了:</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">sum_digits</span>(<span class="params">n</span>):</span><br><span class="line">    <span class="string">"""Return the sum of the digits of positive integer n."""</span></span><br><span class="line">    <span class="keyword">if</span> n &lt; <span class="number">10</span>:                                      <span class="comment">#特殊情况</span></span><br><span class="line">        <span class="keyword">return</span> n</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        all_but_last, last = n // <span class="number">10</span>, n % <span class="number">10</span></span><br><span class="line">        <span class="keyword">return</span> sum_digits(all_but_last) + last      <span class="comment">#不用担心sum_digits(all_but_last)怎么得到答案, 这就是它的定义</span></span><br></pre></td></tr></tbody></table></figure>
+<p><em><strong>如果你干过用人脑压栈的蠢事, 对这个方法的感触会更深</strong></em></p>
+<p>继续:</p>
+<h3 id="2-double-eights">2.<code>double_eights</code></h3>
+<p>编写一个函数判断一个正整数是否含两个有相邻的数字’8’, 如88, 1889, 1881111都<code>return True</code>.</p>
+<p>同样地相信我们的函数, 第一步可以先判断个位和十位有没有连续的’8’, 如果有直接<code>return True</code>, 如果没有, 个位就被排除了.<br>
+我们又注意到如果这个正整数只有两位数, 那么我们判断完个位和十位不符合条件后就可以直接<code>return False</code>了.<br>
+接下来就可以用我们定义的函数, 来判断除了最后一位的前n-1位有没有相邻的’8’.<br>
+通过上面的思考, 翻译成Python完整代码如下:</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">double_eights</span>(<span class="params">n</span>):</span><br><span class="line">    last, second_last = n % <span class="number">10</span>, n // <span class="number">10</span> % <span class="number">10</span>    </span><br><span class="line">    <span class="keyword">if</span> last == <span class="number">8</span> <span class="keyword">and</span> second_last == <span class="number">8</span>:              <span class="comment">#判断个位和十位</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">elif</span> n &lt; <span class="number">100</span>:                                   <span class="comment">#两位数不符合上述条件直接返回, 不进递归</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> double_eights(n // <span class="number">10</span>)                   <span class="comment">#个位被排除了</span></span><br></pre></td></tr></tbody></table></figure>
+<p>通过上面两个例子, 我们可以稍微总结一下了, 写递归函数一般由三部分组成:<br>
+<strong>1. Base case(s), 即特殊情况(可能不止一个).</strong><br>
+<strong>2. Recursive call, 即递归调用.</strong><br>
+<strong>3. Recombination, 即对递归结果的使用.</strong></p>
+<p><strong>同时, 我们对这个所谓的"特殊情况"可以再讨论一下, 它是否可以看作递归的截止条件? 满足该条件即结束本层递归, 返回上层递归.</strong></p>
+<h2 id="初级">初级</h2>
+<p><em><strong>请尽量先自己想一想</strong></em></p>
+<h3 id="3-make-onion">3.<code>make_onion</code></h3>
+<p>编写一个函数<code>make_onion</code>, 该函数接受两个单参数函数 f 和 g. 它<code>return</code>一个函数<code>can_reach</code>, 该函数接受：x、y 和 limit三个参数.<br>
+如果可以使用最多 limit 次对函数 f 和 g 的调用从 x 到达 y，则<code>return True</code>，否则<code>return False</code>.<br>
+例如，如果调用 f 值就加 1 ,调用 g 值就加倍，则可以通过四次调用从 5 到达 25：<code>f(g(g(f(5))))</code>. 即<code>can_reach(5, 25, 4)</code> <code>return True</code>.<br>
+因为有两个函数, 所以用or代表两个方向, 任何一个方向成功就返回True, 同时注意我们调用了一次 f or g ,所以limit次数记得减一.</p>
+<p><em>一个函数不直接返回答案, 而是返回另一个函数来辅助得到答案, 那么这个返回函数就叫做辅助函数.</em></p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">make_onion</span>(<span class="params">f, g</span>):</span><br><span class="line">    <span class="string">"""Return a function can_reach(x, y, limit) that returns</span></span><br><span class="line"><span class="string">    whether some call expression containing only f, g, and x with</span></span><br><span class="line"><span class="string">    up to limit calls will give the result y."""</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">can_reach</span>(<span class="params">x, y, limit</span>):</span><br><span class="line">        <span class="keyword">if</span> limit &lt; <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">elif</span> x == y:</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span>                 <span class="comment">#两个 base cases.</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> can_reach(f(x), y, limit - <span class="number">1</span>) <span class="keyword">or</span> can_reach(g(x), y, limit - <span class="number">1</span>)</span><br><span class="line">    <span class="keyword">return</span> can_reach</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="4-count-partitions">4.<code>count_partitions</code></h3>
+<p>给定正整数 n 和部分最大大小 m，n 的划分数是将 n 表示为不超过 m 的正整数部分的和的方式数目，每种和按递增顺序排列。</p>
+<p>例子：使用不超过 4 的部分划分 6 的方式有 9 种：</p>
+<p>6 = 2 + 4<br>
+6 = 1 + 1 + 4<br>
+6 = 3 + 3<br>
+6 = 1 + 2 + 3<br>
+6 = 1 + 1 + 1 + 3<br>
+6 = 2 + 2 + 2<br>
+6 = 1 + 1 + 2 + 2<br>
+6 = 1 + 1 + 1 + 1 + 2<br>
+6 = 1 + 1 + 1 + 1 + 1 + 1</p>
+<p>定义函数 <code>count_partitions(n, m)</code>，返回使用不超过 m 的部分划分 n 的不同方式数目。</p>
+<p>我们要划分一个数 n，且划分中的每个部分都不超过 m。这个问题可以通过递归思想分成两种情况来考虑：</p>
+<ol>
+<li>
+<p>包含至少一个 m：<br>
+在这种情况下，划分中有一部分是 m。<br>
+由于已经使用了一个 m，剩下的部分实际上是在划分 n - m 的问题，并且这些部分仍然不能超过 m。<br>
+例如，如果我们要划分 6，且最大部分为 4，则可以先取出一个 4，剩下的问题就是划分 6 - 4 = 2，且部分最大为 4。<br>
+因此，划分 n 使用不超过 m 的部分，其中包含 m 的情况，相当于 划分 n - m 使用不超过 m 的方式数。</p>
+</li>
+<li>
+<p>不包含 m：<br>
+在这种情况下，划分中的所有部分都必须小于 m，这意味着我们是在划分 n，使用的部分最大只能是 m - 1。<br>
+例如，划分 6，且不包含 4，意味着最大部分只能是 3 或更小。所以这相当于“划分 6，且最大部分为 3”的问题。<br>
+因此，划分 n 使用不超过 m 的部分，其中不包含 m 的情况相当于 划分 n 使用不超过 m - 1 的方式数。</p>
+</li>
+</ol>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">count_partitions(n, m) = count_partitions(n - m, m) + count_partitions(n, m - <span class="number">1</span>)</span><br></pre></td></tr></tbody></table></figure>
+<p><em>Base cases是什么?</em></p>
+<p>划分 0 的方式只有一种：不包含任何部分；<br>
+对负数 n 划分的方式为 0；<br>
+对 n &gt; 0 使用大小为 0 或更小的部分划分的方式为 0。</p>
+<p>实现如下:</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">count_partitions</span>(<span class="params">n, m</span>):</span><br><span class="line">    <span class="string">"""Count the ways to partition n using parts up to m."""</span></span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    <span class="keyword">elif</span> n &lt; <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    <span class="keyword">elif</span> m == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> count_partitions(n-m, m) + count_partitions(n, m-<span class="number">1</span>)</span><br></pre></td></tr></tbody></table></figure>
+<p><em>下面会涉及几种数据结构, 如果你需要复习,<a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.composingprograms.com/pages/23-sequences.html">请点击<i class="fas fa-external-link-alt"></i></a></em></p>
+<h2 id="中级">中级</h2>
+<h3 id="5-berry-finder">5.<code>berry_finder</code></h3>
+<p>校园里的松鼠需要你的帮助！校园里有很多树，松鼠想知道哪些树上有浆果。定义一个名为<code>berry_finder</code>的函数，该函数接收一棵树作为输入，如果树中有一个节点的值为 ‘berry’，则返回 True，否则返回 False.</p>
+<p>回忆一下我们上面讲到的.对于一棵树, 由于它的分支是一个列表, 所以我们有特殊的递归使用:</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> b <span class="keyword">in</span> branches(t):</span><br><span class="line">    berry_finder(b)</span><br></pre></td></tr></tbody></table></figure>
+<p>那么这道题, 我们对每个子树分别进行搜索就能得到答案了:</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> label(t) == <span class="string">'berry'</span>:                     <span class="comment">#不要忘记检查label, 同时这个语句也是递归的截止条件</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">for</span> b <span class="keyword">in</span> branches(t):                   <span class="comment">#遍历子树</span></span><br><span class="line">        <span class="keyword">if</span> berry_finder(b):                 <span class="comment">#判断每个子树是否符合条件</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="6-max-path-sum">6.<code>max_path_sum</code></h3>
+<p>编写一个函数，接收一棵树作为输入，并返回从树根到任意叶节点路径上节点值的最大和。根到叶节点的路径是指从根节点开始，经过一系列节点到达某个叶节点的节点序列。可以假设树中的所有节点标签都是正数。</p>
+<p>寻找最大和可以使用<code>max</code>函数, 参数为各个子树的最大和.<br>
+同样的, 对于这种树的题目我们可以直接把子树全塞我们定义的函数中, 再加上base cases:</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">max_path_sum</span>(<span class="params">t</span>):</span><br><span class="line">    <span class="string">"""Return the maximum root-to-leaf path sum of a tree.</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; t = tree(1, [tree(5, [tree(1), tree(3)]), tree(10)])</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; max_path_sum(t) # 1, 10</span></span><br><span class="line"><span class="string">    11</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; t2 = tree(5, [tree(4, [tree(1), tree(3)]), tree(2, [tree(10), tree(3)])])</span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; max_path_sum(t2) # 5, 2, 10</span></span><br><span class="line"><span class="string">    17</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="comment"># Non-list comprehension solution</span></span><br><span class="line">    <span class="keyword">if</span> is_leaf(t):</span><br><span class="line">        <span class="keyword">return</span> label(t)</span><br><span class="line">    highest_sum = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> b <span class="keyword">in</span> branches(t):</span><br><span class="line">        highest_sum = <span class="built_in">max</span>(max_path_sum(b), highest_sum)</span><br><span class="line">    <span class="keyword">return</span> label(t) + highest_sum</span><br><span class="line"></span><br><span class="line">    <span class="comment"># List comprehension solution</span></span><br><span class="line">    <span class="keyword">if</span> is_leaf(t):</span><br><span class="line">      <span class="keyword">return</span> label(t)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">      <span class="keyword">return</span> label(t) + <span class="built_in">max</span>([max_path_sum(b) <span class="keyword">for</span> b <span class="keyword">in</span> branches(t)])</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="7-add-d-leaves">7.<code>add_d_leaves</code></h3>
+<p>实现<code>add_d_leaves</code>函数，该函数接收一个 Tree 实例 t 和一个数字 v。<br>
+我们定义树 t 中某个节点的深度为从根节点到该节点之间边的数量。因此，根节点的深度为 0。<br>
+对于树中的每个节点，你应该根据节点的深度 d 添加 d 个叶子节点。每个添加的叶子节点的标签都应该为 v。如果某个节点已经有了分支，应该将这些叶子添加到分支列表的末尾。<br>
+例如，你需要在深度为 1 的每个节点上添加 1 个标签为 v 的叶子，在深度为 2 的每个节点上添加 2 个标签为 v 的叶子，依此类推。</p>
+<p>同样的遍历每个子树, 并且对每个子树都进行添加叶子.<br>
+函数里面我们要让他干什么呢? 根据节点的深度来添加叶子, 所以我们还需要一个辅助函数来记录节点的深度.</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line">t.branches.extend([Tree(v) <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(d)])</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> b <span class="keyword">in</span> t.branches:</span><br><span class="line">    add_leaves(b, d + <span class="number">1</span>)</span><br></pre></td></tr></tbody></table></figure>
+<p>还要注意我们要在遍历之后再添加叶子, 否则后面的遍历会把新加入的叶子一起遍历, 这不符合我们的要求<br>
+结合:</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">add_d_leaves</span>(<span class="params">t, v</span>):</span><br><span class="line">    <span class="string">"""Add d leaves containing v to each node at every depth d."""</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">add_leaves</span>(<span class="params">t, d</span>):</span><br><span class="line">        <span class="keyword">for</span> b <span class="keyword">in</span> t.branches:</span><br><span class="line">            add_leaves(b, d + <span class="number">1</span>)</span><br><span class="line">        t.branches.extend([Tree(v) <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(d)]) </span><br><span class="line">    add_leaves(t, <span class="number">0</span>)</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="8-level-mutation-link">8.<code>level_mutation_link</code></h3>
+<p>给定一棵树 t 和一个由单参数函数组成的链表 funcs，编写一个函数，通过使用 funcs 中对应深度的函数，修改树 t 中各节点的标签。例如：<br>
+根节点（深度 0）的标签将使用 funcs 中深度 0 对应的函数来修改（即 funcs.first）。<br>
+树中第一层的节点标签将使用 funcs 中深度 1 对应的函数来修改（即 funcs.rest.first），依此类推。<br>
+funcs 中的每个函数都会接收一个标签值，并返回一个有效的标签值。<br>
+如果一个节点是叶节点，并且 funcs 中还有未使用的函数，这些剩余的函数应该按顺序依次应用于叶节点的标签。如果 funcs 为空，则树应保持不变。<br>
+请参考 doctests 示例进行理解。</p>
+<figure class="highlight python"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">level_mutation_link</span>(<span class="params">t, funcs</span>):</span><br><span class="line">	<span class="string">"""Mutates t using the functions in the linked list funcs.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">	&gt;&gt;&gt; t = Tree(1, [Tree(2, [Tree(3)])])</span></span><br><span class="line"><span class="string">	&gt;&gt;&gt; funcs = Link(lambda x: x + 1, Link(lambda y: y * 5, Link(lambda z: z ** 2)))</span></span><br><span class="line"><span class="string">	&gt;&gt;&gt; level_mutation_link(t, funcs)</span></span><br><span class="line"><span class="string">	&gt;&gt;&gt; t    # At level 0, apply x + 1; at level 1, apply y * 5; at level 2 (leaf), apply z ** 2</span></span><br><span class="line"><span class="string">	Tree(2, [Tree(10, [Tree(9)])])</span></span><br><span class="line"><span class="string">	&gt;&gt;&gt; t2 = Tree(1, [Tree(2), Tree(3, [Tree(4)])])</span></span><br><span class="line"><span class="string">	&gt;&gt;&gt; level_mutation_link(t2, funcs)</span></span><br><span class="line"><span class="string">	&gt;&gt;&gt; t2    # Level 0: 1+1=2; Level 1: 2*5=10 =&gt; 10**2 = 100, 3*5=15; Level 2 (leaf): 4**2=16</span></span><br><span class="line"><span class="string">	Tree(2, [Tree(100), Tree(15, [Tree(16)])])</span></span><br><span class="line"><span class="string">	&gt;&gt;&gt; t3 = Tree(1, [Tree(2)])</span></span><br><span class="line"><span class="string">	&gt;&gt;&gt; level_mutation_link(t3, funcs)</span></span><br><span class="line"><span class="string">	&gt;&gt;&gt; t3    # Level 0: 1+1=2; Level 1: 2*5=10; no further levels, so apply remaining z ** 2: 10**2=100</span></span><br><span class="line"><span class="string">	Tree(2, [Tree(100)])</span></span><br><span class="line"><span class="string">	"""</span></span><br><span class="line">	<span class="keyword">if</span> funcs <span class="keyword">is</span> Link.empty:                         <span class="comment">#为空链表则直接返回</span></span><br><span class="line">		<span class="keyword">return</span></span><br><span class="line">	t.label = funcs.first(t.label)</span><br><span class="line">	remaining = funcs.rest</span><br><span class="line">	<span class="keyword">if</span> t.is_leaf() <span class="keyword">and</span> remaining <span class="keyword">is</span> <span class="keyword">not</span> Link.empty:         <span class="comment">#剩余的函数全部应用</span></span><br><span class="line">		<span class="keyword">while</span> remaining <span class="keyword">is</span> <span class="keyword">not</span> Link.empty:</span><br><span class="line">			t.label = remaining.first(t.label)</span><br><span class="line">			remaining = remaining.rest</span><br><span class="line">	<span class="keyword">for</span> b <span class="keyword">in</span> t.branches:                                <span class="comment">#正常遍历</span></span><br><span class="line">		level_mutation_link(b, remaining)</span><br></pre></td></tr></tbody></table></figure>
+<p>参考资料:<br>
+[1]: <a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.composingprograms.com/">https://www.composingprograms.com/<i class="fas fa-external-link-alt"></i></a><br>
+[2]: <a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://cs61a.org/">https://cs61a.org/<i class="fas fa-external-link-alt"></i></a><br>
+[3]: <a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://composingprograms.netlify.app/">https://composingprograms.netlify.app/<i class="fas fa-external-link-alt"></i></a><br>
+[4]: <a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.youtube.com/watch?v=31EDjrN1x5k&amp;list=PL6BsET-8jgYUUBHIgUAqjrMUoPCGQcYdl">https://www.youtube.com/watch?v=31EDjrN1x5k&amp;list=PL6BsET-8jgYUUBHIgUAqjrMUoPCGQcYdl<i class="fas fa-external-link-alt"></i></a><br>
+[5]: <a class="link" target="_blank" rel="noopener external nofollow noreferrer" href="https://www.youtube.com/watch?v=sflkoII6Sgs&amp;list=PLx38hZJ5RLZfbxxUweflX7WTodft__azP&amp;index=2">https://www.youtube.com/watch?v=sflkoII6Sgs&amp;list=PLx38hZJ5RLZfbxxUweflX7WTodft__azP&amp;index=2<i class="fas fa-external-link-alt"></i></a></p>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E7%AE%97%E6%B3%95/">算法</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Python/">Python</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/posts/91a50de5.html"
+                                   title="CS61A(二)"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">CS61A(二)</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/posts/8d64c065.html"
+                                   title="周记(二)"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">周记(二)</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">Recursive Leap of Faith</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A5%E9%97%A8"><span class="nav-text">入门</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-sum-digits"><span class="nav-text">1.sum_digits</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-double-eights"><span class="nav-text">2.double_eights</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E7%BA%A7"><span class="nav-text">初级</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-make-onion"><span class="nav-text">3.make_onion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-count-partitions"><span class="nav-text">4.count_partitions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AD%E7%BA%A7"><span class="nav-text">中级</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-berry-finder"><span class="nav-text">5.berry_finder</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-max-path-sum"><span class="nav-text">6.max_path_sum</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-add-d-leaves"><span class="nav-text">7.add_d_leaves</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-level-mutation-link"><span class="nav-text">8.level_mutation_link</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;<span>2024</span>&nbsp;-&nbsp;2025
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Zephyr</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io" rel="external nofollow noreferrer">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep" rel="external nofollow noreferrer">Keep</a>
+    </div>
+
+    
+
+    
+        <div class="count-info info-item">
+            
+
+            
+                <span class="count-item border-box uv">
+                    <span class="item-type border-box">访客数</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">访问量</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+            <li class="tools-item rss flex-center">
+                <a class="flex-center"
+                   href="/atom.xml"
+                   target="_blank"
+                >
+                    <i class="fas fa-rss"></i>
+                </a>
+            </li>
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">Recursive Leap of Faith</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A5%E9%97%A8"><span class="nav-text">入门</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-sum-digits"><span class="nav-text">1.sum_digits</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-double-eights"><span class="nav-text">2.double_eights</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E7%BA%A7"><span class="nav-text">初级</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-make-onion"><span class="nav-text">3.make_onion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-count-partitions"><span class="nav-text">4.count_partitions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AD%E7%BA%A7"><span class="nav-text">中级</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-berry-finder"><span class="nav-text">5.berry_finder</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-max-path-sum"><span class="nav-text">6.max_path_sum</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-add-d-leaves"><span class="nav-text">7.add_d_leaves</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-level-mutation-link"><span class="nav-text">8.level_mutation_link</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/toggle-theme.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/code-block.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/libs/anime.min.js"></script>
+
+<!-- local search -->
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/local-search.js"></script>
+
+
+<!-- lazyload -->
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/lazyload.js"></script>
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/post/post-helper.js"></script>
+
+        <!-- toc -->
+        
+            <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/post/toc.js"></script>
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+    
+        
+    
+
+</body>
+</html>
