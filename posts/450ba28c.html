@@ -9,7 +9,7 @@
     
     <title>
         
-            Spring（二） |
+            Centos7更新gcc到9 |
         
         Zephyr&#39;s Blog
     </title>
@@ -195,7 +195,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        Spring（二）
+                        Centos7更新gcc到9
                     </div>
                 
 
@@ -217,13 +217,13 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2024-11-23 18:35:33</span>
+                <span class="datetime">2025-01-10 13:53:23</span>
             </span>
 
             
                 <span class="meta-info-item post-update-date">
                     <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                    <span class="datetime" data-updated="Sat Dec 07 2024 18:46:47 GMT+0800">2024-12-07 18:46:47</span>
+                    <span class="datetime" data-updated="Fri Jan 10 2025 13:52:48 GMT+0800">2025-01-10 13:52:48</span>
                 </span>
             
         
@@ -243,10 +243,7 @@
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Java/">Java</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Spring/">Spring</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Linux/">Linux</a></li>
                         
                     
                 </ul>
@@ -271,23 +268,34 @@
                     
 
                     
-                         <h1>AOP</h1>
-<h2 id="概念">概念</h2>
-<p>AOP的就是在运行时增强我们指定的方法，动态的将代码切入到指定方法的指定位置。也就是说我们可以利用AOP在多个方法的前后增加一些重复性的操作。<br>
-比如我们要在每个方法前面打印日志，就可以利用AOP来实现。在不改动原代码的情况下，对我们的代码进行了增强。<br>
-<img lazyload="" alt="image" data-src="https://raw.githubusercontent.com/moiseak/blogimg/main/img/20241125172212.png"><br>
-<strong>在某个地方把我们的逻辑切断，在切断处进行一个额外的操作，然后再把逻辑续上。</strong></p>
-<h2 id="配置">配置</h2>
-<p>xml和接口的使用就不说了，毕竟我们主要还是使用注解开发。<br>
-首先我们需要在主类添加<code>@EnableAspectJAutoProxy</code>注解，开启AOP注解支持：</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@EnableAspectJAutoProxy</span> </span><br><span class="line"><span class="meta">@ComponentScan("org.example.entity")</span> </span><br><span class="line"><span class="meta">@Configuration</span> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MainConfiguration</span> { }</span><br></pre></td></tr></tbody></table></figure>
-<p>注册一个Bean：</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Component</span> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Student</span> { </span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">study</span><span class="params">()</span>{ </span><br><span class="line">		System.out.println(<span class="string">"我是学习方法！"</span>); </span><br><span class="line">	} </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p>接着我们需要在定义AOP增强操作的类上添加<code>@Aspect</code>注解和<code>@Component</code>将其注册为Bean即可，就像我们之前在配置文件中也要将其注册为Bean那样：</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Aspect</span> </span><br><span class="line"><span class="meta">@Component</span> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">StudentAOP</span> { }</span><br></pre></td></tr></tbody></table></figure>
-<p>比如我们要在study之前执行我们的增强代码：</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Before("execution(* org.example.entity.Student.study())")</span> <span class="comment">//execution写法跟之前一样 </span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">before</span><span class="params">()</span>{ System.out.println(<span class="string">"我是之前执行的内容！"</span>); }</span><br></pre></td></tr></tbody></table></figure>
-<p>除了Before，还有其他的位置可以使用。</p>
+                         <p>Centos7已经与2024年6月30日停止维护，yum源也无法使用了。<br>
+如果运行</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">yum -y install centos-release-scl</span><br></pre></td></tr></tbody></table></figure>
+<p>会得到</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">Could not retrieve mirrorlist http://mirrorlist.centos.org/?release=7&amp;arch=x86_64&amp;repo=os&amp;infra=stock error was</span><br><span class="line">14: curl#6 - "Could not resolve host: mirrorlist.centos.org; 未知的错误"</span><br></pre></td></tr></tbody></table></figure>
+<p>此时可以</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/*.repo</span><br><span class="line">sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/*.repo</span><br><span class="line">sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/*.repo</span><br><span class="line">sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*</span><br><span class="line">sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*</span><br></pre></td></tr></tbody></table></figure>
+<p>之后</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">yum clean all</span><br><span class="line">yum makecache</span><br></pre></td></tr></tbody></table></figure>
+<p>然后就可以安装centos-release-scl了</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">yum -y install centos-release-scl</span><br></pre></td></tr></tbody></table></figure>
+<p>安装完之后我们进入<code>/etc/yum.repos.d/</code>可以发现多了两个repo</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">cd /etc/yum.repos.d/</span><br></pre></td></tr></tbody></table></figure>
+<p><code>CentOS-SCLo-scl.repo</code>和<code>CentOS-SCLo-scl-rh.repo</code></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">ll</span><br><span class="line">总用量 48</span><br><span class="line">-rw-r--r--. 1 root root 1669 1月  10 13:21 CentOS-Base.repo</span><br><span class="line">-rw-r--r--. 1 root root 1309 1月  10 13:21 CentOS-CR.repo</span><br><span class="line">-rw-r--r--. 1 root root  649 1月  10 13:21 CentOS-Debuginfo.repo</span><br><span class="line">-rw-r--r--. 1 root root  315 1月  10 13:21 CentOS-fasttrack.repo</span><br><span class="line">-rw-r--r--. 1 root root  630 1月  10 13:21 CentOS-Media.repo</span><br><span class="line">-rw-r--r--. 1 root root  998 12月 11 2018 CentOS-SCLo-scl.repo</span><br><span class="line">-rw-r--r--. 1 root root  971 10月 29 2018 CentOS-SCLo-scl-rh.repo</span><br><span class="line">-rw-r--r--. 1 root root 1332 1月  10 13:21 CentOS-Sources.repo</span><br><span class="line">-rw-r--r--. 1 root root 8515 1月  10 13:21 CentOS-Vault.repo</span><br><span class="line">-rw-r--r--. 1 root root  618 1月  10 13:21 CentOS-x86_64-kernel.repo</span><br></pre></td></tr></tbody></table></figure>
+<p>对这两个repo进行部分修改</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">vi /etc/yum.repos.d/CentOS-SCLo-scl.repo</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[centos-sclo-sclo]</span><br><span class="line">name=CentOS-7 - SCLo sclo</span><br><span class="line">baseurl=https://mirrors.aliyun.com/centos/7/sclo/x86_64/sclo/</span><br><span class="line"># mirrorlist=http://mirrorlist.centos.org?arch=$basearch&amp;release=7&amp;repo=sclo-sclo</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line">gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">vi /etc/yum.repos.d/CentOS-SCLo-scl-rh.repo</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">[centos-sclo-rh]</span><br><span class="line">name=CentOS-7 - SCLo rh</span><br><span class="line">baseurl=https://mirrors.aliyun.com/centos/7/sclo/x86_64/rh/</span><br><span class="line"># mirrorlist=http://mirrorlist.centos.org?arch=$basearch&amp;release=7&amp;repo=sclo-rh</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line">gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-SCLo</span><br></pre></td></tr></tbody></table></figure>
+<p>刷新缓存</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">yum repolist</span><br><span class="line">yum clean all</span><br><span class="line">yum makecache</span><br></pre></td></tr></tbody></table></figure>
+<p>之后进入<code>/opt/</code>安装gcc9</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">cd /opt/</span><br><span class="line">yum -y install devtoolset-9-gcc*</span><br></pre></td></tr></tbody></table></figure>
+<p>该文件会下载在<code>/opt/rh/</code></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">cd rh/</span><br><span class="line">cd devtoolset-9/</span><br><span class="line">source ./enable</span><br></pre></td></tr></tbody></table></figure>
+<p>检查版本发现更新成功</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">gcc --version</span><br><span class="line">gcc (GCC) 9.3.1 20200408 (Red Hat 9.3.1-2)</span><br></pre></td></tr></tbody></table></figure>
 
                     
                 </div>
@@ -300,11 +308,7 @@
                             <ul class="post-tags-box border-box">
                                 
                                     <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Java/">Java</a>
-                                    </li>
-                                
-                                    <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Spring/">Spring</a>
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Linux/">Linux</a>
                                     </li>
                                 
                             </ul>
@@ -323,14 +327,14 @@
                             <div class="prev-post">
                                 <a class="prev"
                                    rel="prev"
-                                   href="/posts/797198ce.html"
-                                   title="效率&amp;时间"
+                                   href="/posts/1f18a9aa.html"
+                                   title="年终总结"
                                 >
                                     <span class="left arrow-icon flex-center">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">效率&amp;时间</span>
+                                        <span class="post-nav-title-item text-ellipsis">年终总结</span>
                                         <span class="post-nav-item">上一篇</span>
                                     </span>
                                 </a>
@@ -340,11 +344,11 @@
                             <div class="next-post">
                                 <a class="next"
                                    rel="next"
-                                   href="/posts/1d2ccb18.html"
-                                   title="Spring（一）"
+                                   href="/posts/be30a71f.html"
+                                   title="周记（八）"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">Spring（一）</span>
+                                        <span class="post-nav-title-item text-ellipsis">周记（八）</span>
                                         <span class="post-nav-item">下一篇</span>
                                     </span>
                                     <span class="right arrow-icon flex-center">
@@ -372,7 +376,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">AOP</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-text">概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE"><span class="nav-text">配置</span></a></li></ol></li></ol>
+        
     </div>
 </div>
 
@@ -559,7 +563,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">AOP</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-text">概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE"><span class="nav-text">配置</span></a></li></ol></li></ol>
+        
     </div>
 </div>
 

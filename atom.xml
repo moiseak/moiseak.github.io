@@ -6,17 +6,68 @@
   <link href="https://moiseak.github.io/atom.xml" rel="self"/>
   
   <link href="https://moiseak.github.io/"/>
-  <updated>2024-12-07T09:52:08.492Z</updated>
+  <updated>2025-01-10T07:02:14.325Z</updated>
   <id>https://moiseak.github.io/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>年终总结</title>
+    <link href="https://moiseak.github.io/posts/1f18a9aa.html"/>
+    <id>https://moiseak.github.io/posts/1f18a9aa.html</id>
+    <published>2025-01-10T06:59:23.000Z</published>
+    <updated>2025-01-10T07:02:14.325Z</updated>
+    
+    
+    <summary type="html">2024</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Centos7更新gcc到9</title>
+    <link href="https://moiseak.github.io/posts/450ba28c.html"/>
+    <id>https://moiseak.github.io/posts/450ba28c.html</id>
+    <published>2025-01-10T05:53:23.000Z</published>
+    <updated>2025-01-10T05:52:48.217Z</updated>
+    
+    
+    <summary type="html">Centos7停止维护后修改yum源，更新gcc</summary>
+    
+    
+    
+    <category term="学习笔记" scheme="https://moiseak.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Linux" scheme="https://moiseak.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>周记（八）</title>
+    <link href="https://moiseak.github.io/posts/be30a71f.html"/>
+    <id>https://moiseak.github.io/posts/be30a71f.html</id>
+    <published>2024-12-16T08:06:33.000Z</published>
+    <updated>2024-12-16T08:06:12.299Z</updated>
+    
+    
+    <summary type="html">周记</summary>
+    
+    
+    
+    <category term="周记" scheme="https://moiseak.github.io/categories/%E5%91%A8%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>周记（七）</title>
     <link href="https://moiseak.github.io/posts/495b8f5c.html"/>
     <id>https://moiseak.github.io/posts/495b8f5c.html</id>
     <published>2024-12-07T09:48:33.000Z</published>
-    <updated>2024-12-07T09:52:08.492Z</updated>
+    <updated>2024-12-07T10:46:47.712Z</updated>
     
     
     <summary type="html">周记</summary>
@@ -33,7 +84,7 @@
     <link href="https://moiseak.github.io/posts/50cab45.html"/>
     <id>https://moiseak.github.io/posts/50cab45.html</id>
     <published>2024-11-26T07:46:33.000Z</published>
-    <updated>2024-11-26T08:15:56.702Z</updated>
+    <updated>2024-12-07T10:46:47.716Z</updated>
     
     
     <summary type="html">滑动窗口笔记</summary>
@@ -52,7 +103,7 @@
     <link href="https://moiseak.github.io/posts/797198ce.html"/>
     <id>https://moiseak.github.io/posts/797198ce.html</id>
     <published>2024-11-25T09:35:33.000Z</published>
-    <updated>2024-11-26T08:17:35.433Z</updated>
+    <updated>2024-12-07T10:46:47.710Z</updated>
     
     
     <summary type="html">过于重视效率反而会降低效率</summary>
@@ -69,7 +120,7 @@
     <link href="https://moiseak.github.io/posts/2d3a27c0.html"/>
     <id>https://moiseak.github.io/posts/2d3a27c0.html</id>
     <published>2024-11-23T10:35:33.000Z</published>
-    <updated>2024-11-25T09:30:14.712Z</updated>
+    <updated>2024-12-07T10:46:47.706Z</updated>
     
     
     <summary type="html">AOP</summary>
@@ -90,7 +141,7 @@
     <link href="https://moiseak.github.io/posts/1d2ccb18.html"/>
     <id>https://moiseak.github.io/posts/1d2ccb18.html</id>
     <published>2024-11-17T12:35:33.000Z</published>
-    <updated>2024-11-23T10:35:53.904Z</updated>
+    <updated>2024-12-07T10:46:47.709Z</updated>
     
     
     <summary type="html">IoC容器基础</summary>
@@ -111,7 +162,7 @@
     <link href="https://moiseak.github.io/posts/bf6eaed4.html"/>
     <id>https://moiseak.github.io/posts/bf6eaed4.html</id>
     <published>2024-11-16T08:35:33.000Z</published>
-    <updated>2024-11-16T09:03:51.991Z</updated>
+    <updated>2024-12-07T10:46:47.714Z</updated>
     
     
     <summary type="html">周记</summary>
@@ -303,9 +354,9 @@
     <category term="CS61A" scheme="https://moiseak.github.io/categories/CS61A/"/>
     
     
-    <category term="Python" scheme="https://moiseak.github.io/tags/Python/"/>
-    
     <category term="Scheme" scheme="https://moiseak.github.io/tags/Scheme/"/>
+    
+    <category term="Python" scheme="https://moiseak.github.io/tags/Python/"/>
     
   </entry>
   
@@ -324,58 +375,9 @@
     <category term="CS61A" scheme="https://moiseak.github.io/categories/CS61A/"/>
     
     
-    <category term="算法" scheme="https://moiseak.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
     <category term="Python" scheme="https://moiseak.github.io/tags/Python/"/>
     
-  </entry>
-  
-  <entry>
-    <title>周记(二)</title>
-    <link href="https://moiseak.github.io/posts/8d64c065.html"/>
-    <id>https://moiseak.github.io/posts/8d64c065.html</id>
-    <published>2024-09-21T08:10:25.000Z</published>
-    <updated>2024-11-08T07:33:44.317Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;写点&quot;&gt;写点&lt;/h2&gt;
-&lt;p&gt;考试那几天我根本没心情自学，一直在疯狂刷概率论的习题和知识点，并且考完概率论就是中秋假期，狠狠摆烂了好几天，想着这么累休息一下吧，所以进度可以说是丝毫没有进展&lt;br&gt;
-考试间接或直接浪费了我将近两周的学习时间，按说现在我应该</summary>
-        
-      
-    
-    
-    
-    <category term="周记" scheme="https://moiseak.github.io/categories/%E5%91%A8%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>周记(一)</title>
-    <link href="https://moiseak.github.io/posts/22555b07.html"/>
-    <id>https://moiseak.github.io/posts/22555b07.html</id>
-    <published>2024-09-06T14:17:23.000Z</published>
-    <updated>2024-11-08T07:33:41.726Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;总结&quot;&gt;总结&lt;/h2&gt;
-&lt;p&gt;经过一周的折腾和思考，也终于在今天把要学的东西整理好了，这不是说最近没学习，而是最近学得很乱，什么都学一点，主要还是 61A 和 61B 的学习版本没定下来吧，之前由于我的精神强迫症，想着开学后跟着课程表走的，但是…</summary>
-        
-      
-    
-    
-    
-    <category term="周记" scheme="https://moiseak.github.io/categories/%E5%91%A8%E8%AE%B0/"/>
-    
+    <category term="算法" scheme="https://moiseak.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   

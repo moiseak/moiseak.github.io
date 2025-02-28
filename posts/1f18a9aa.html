@@ -9,7 +9,7 @@
     
     <title>
         
-            Spring（二） |
+            年终总结 |
         
         Zephyr&#39;s Blog
     </title>
@@ -195,7 +195,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        Spring（二）
+                        年终总结
                     </div>
                 
 
@@ -217,40 +217,19 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2024-11-23 18:35:33</span>
+                <span class="datetime">2025-01-10 14:59:23</span>
             </span>
 
             
                 <span class="meta-info-item post-update-date">
                     <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                    <span class="datetime" data-updated="Sat Dec 07 2024 18:46:47 GMT+0800">2024-12-07 18:46:47</span>
+                    <span class="datetime" data-updated="Fri Jan 10 2025 15:02:14 GMT+0800">2025-01-10 15:02:14</span>
                 </span>
             
         
 
         
-            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
-                <ul class="post-category-ul">
-                    
-                            <li class="category-item"><a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></li>
-                        
-                    
-                </ul>
-            </span>
-        
 
-        
-            <span class="post-tag meta-info-item border-box">
-                <ul class="post-tag-ul">
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Java/">Java</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Spring/">Spring</a></li>
-                        
-                    
-                </ul>
-            </span>
         
 
         
@@ -271,23 +250,22 @@
                     
 
                     
-                         <h1>AOP</h1>
-<h2 id="概念">概念</h2>
-<p>AOP的就是在运行时增强我们指定的方法，动态的将代码切入到指定方法的指定位置。也就是说我们可以利用AOP在多个方法的前后增加一些重复性的操作。<br>
-比如我们要在每个方法前面打印日志，就可以利用AOP来实现。在不改动原代码的情况下，对我们的代码进行了增强。<br>
-<img lazyload="" alt="image" data-src="https://raw.githubusercontent.com/moiseak/blogimg/main/img/20241125172212.png"><br>
-<strong>在某个地方把我们的逻辑切断，在切断处进行一个额外的操作，然后再把逻辑续上。</strong></p>
-<h2 id="配置">配置</h2>
-<p>xml和接口的使用就不说了，毕竟我们主要还是使用注解开发。<br>
-首先我们需要在主类添加<code>@EnableAspectJAutoProxy</code>注解，开启AOP注解支持：</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@EnableAspectJAutoProxy</span> </span><br><span class="line"><span class="meta">@ComponentScan("org.example.entity")</span> </span><br><span class="line"><span class="meta">@Configuration</span> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MainConfiguration</span> { }</span><br></pre></td></tr></tbody></table></figure>
-<p>注册一个Bean：</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Component</span> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Student</span> { </span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">study</span><span class="params">()</span>{ </span><br><span class="line">		System.out.println(<span class="string">"我是学习方法！"</span>); </span><br><span class="line">	} </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p>接着我们需要在定义AOP增强操作的类上添加<code>@Aspect</code>注解和<code>@Component</code>将其注册为Bean即可，就像我们之前在配置文件中也要将其注册为Bean那样：</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Aspect</span> </span><br><span class="line"><span class="meta">@Component</span> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">StudentAOP</span> { }</span><br></pre></td></tr></tbody></table></figure>
-<p>比如我们要在study之前执行我们的增强代码：</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="meta">@Before("execution(* org.example.entity.Student.study())")</span> <span class="comment">//execution写法跟之前一样 </span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">before</span><span class="params">()</span>{ System.out.println(<span class="string">"我是之前执行的内容！"</span>); }</span><br></pre></td></tr></tbody></table></figure>
-<p>除了Before，还有其他的位置可以使用。</p>
+                         <p>想了想还是写个年终总结吧。<br>
+我在24年初写过一份2024年规划，但是不知何时那个文件丢失了，现在也只依稀记得几项了，唯一可以确定的是基本一个都没有完成。<br>
+今年是我第一次在大学完整的度过一年。<br>
+上半年我对自己的未来很有信心，甚至到了自大的地步，尤其在我三月份学完了大部分CSAPP后到达了愚昧之峰。现在想想那时我也没学到什么东西，语言，算法，体系结构都是浅尝辄止，除此之外似乎也没什么值得一提的了。而当时的我却以为自己已经俯瞰了整个计算机世界，一切唾手可得。那么接下来的当然是——绝望之谷。<br>
+<img lazyload="" alt="image" data-src="https://raw.githubusercontent.com/moiseak/blogimg/main/img/yumei.jpeg"></p>
+<p>四五月份的打击接踵而来，如今我已无心分辨对错，而当时的我，的确是陷入了深深的自我否定之中。消沉了一段时间后强打精神学了Hadoop之类，当然没什么收获，现在我已经记不得到底学了什么，为数不多的印象全是在配环境。<br>
+草草应付完期末后我回到了家，在亲情的温暖下我多少找到了一些力量。妈妈出于对我的关心，给我找了一份暑假工，希望让我多与人接触。<br>
+不得不说，打工那一个月是我今年最快乐的时间，没有太多的深谋远虑，只需要认真做好眼前的事情，与人们的交流也让我感到轻松。其实每天早八晚五的工作对我来说还挺累的，但我所做的一切都是有意义的，我写的每一个字，说的每一句话都会对某一个人产生或大或小的影响。这是在理论学习中感受不到的“活着”的感觉。<br>
+这个过程中也慢慢接纳了真正的自己，开始像一个普通的计算机学生一样认真从CS61A学起。<br>
+八月份结束工作后又学习了一部分61A就要准备开学了。<br>
+开学后的那段时间我是相当有能量的，九月份完成了61A和部分考试，十一月中旬完成了61B。<br>
+下一步不知道自己要学什么了，开始随便看看一些Java知识，后来去学了一下SSM和SpringBoot。之后便开始了边摸鱼边复习期末的日子。<br>
+回过头来却发现这一年已经结束了，得到了之前梦想的自由与时间后我并没有什么成就。<br>
+今年大概是我的价值观与现实冲突最剧烈的一年了，4–7月这段时间每天都在自我挣扎，不过最终还是选择了和解，心态也趋于平和。<br>
+今年我依旧会写新年规划，这次我会尽力保证它不丢失。<br>
+新的一年，祝好。</p>
 
                     
                 </div>
@@ -296,18 +274,6 @@
 
                 <div class="post-bottom-tags-and-share border-box">
                     <div>
-                        
-                            <ul class="post-tags-box border-box">
-                                
-                                    <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Java/">Java</a>
-                                    </li>
-                                
-                                    <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Spring/">Spring</a>
-                                    </li>
-                                
-                            </ul>
                         
                     </div>
                     <div>
@@ -320,31 +286,15 @@
                 
                     <div class="post-nav border-box">
                         
-                            <div class="prev-post">
-                                <a class="prev"
-                                   rel="prev"
-                                   href="/posts/797198ce.html"
-                                   title="效率&amp;时间"
-                                >
-                                    <span class="left arrow-icon flex-center">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                    <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">效率&amp;时间</span>
-                                        <span class="post-nav-item">上一篇</span>
-                                    </span>
-                                </a>
-                            </div>
-                        
                         
                             <div class="next-post">
                                 <a class="next"
                                    rel="next"
-                                   href="/posts/1d2ccb18.html"
-                                   title="Spring（一）"
+                                   href="/posts/450ba28c.html"
+                                   title="Centos7更新gcc到9"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">Spring（一）</span>
+                                        <span class="post-nav-title-item text-ellipsis">Centos7更新gcc到9</span>
                                         <span class="post-nav-item">下一篇</span>
                                     </span>
                                     <span class="right arrow-icon flex-center">
@@ -372,7 +322,7 @@
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">AOP</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-text">概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE"><span class="nav-text">配置</span></a></li></ol></li></ol>
+        
     </div>
 </div>
 
@@ -559,7 +509,7 @@
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text">AOP</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-text">概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE"><span class="nav-text">配置</span></a></li></ol></li></ol>
+        
     </div>
 </div>
 
