@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Zephyr">
+    
+    <title>
+        
+            CS61B-21SP-Project0 |
+        
+        Zephyr&#39;s Blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/moiseak/blogimg@main/img/hun.jpg">
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/fontawesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/regular.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/solid.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/font/css/brands.min.css">
+    
+        
+            
+                
+<link rel="stylesheet" href="/css/font.css">
+
+            
+        
+            
+                
+<link rel="stylesheet" href="/css/custom-1.css">
+
+            
+        
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"moiseak.github.io","root":"/","language":"zh-CN","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"Zephyr's Blog","author":"Zephyr","favicon":"https://cdn.jsdelivr.net/gh/moiseak/blogimg@main/img/hun.jpg"},"menu":{"archives":"/archives","links":"/links","about":"/about"},"first_screen":{"enable":true,"background_img":"https://raw.githubusercontent.com/moiseak/blogimg/main/img/while.jpg","background_img_dark":"https://cdn.jsdelivr.net/gh/moiseak/blogimg@main/img/hun.jpg","description":"不要温和地走进那个良夜。","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/moiseak"}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"created"},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":"https://cdn.jsdelivr.net/gh/moiseak/blogimg@main/img/mm_facetoface_collect_qrcode_1730722447285.png","text":"请作者喝咖啡","icon":null}},"code_block":{"tools":{"enable":true,"style":"mac"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":false,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":false}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"gitalk","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":"moiseak","github_admins":null,"repository":"moiseak.github.io","client_id":"Ov23liVVjbnV50KHXLgl","client_secret":"4793c4b0c902c60168c579271fb612dc74ff6538","proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":true},"lazyload":{"enable":true},"cdn":{"enable":true,"provider":"jsdelivr"},"pjax":{"enable":false},"footer":{"since":2024,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":["/css/font.css","/css/custom-1.css"],"js":[null]},"root":"","source_data":{"links":[{"title":"朋友们"},{"name":"YOYOArticle","link":"https://yoake.cc","description":"𝑩𝒊𝒓𝒅𝒔 𝒂𝒓𝒆 𝒃𝒐𝒓𝒏 𝒘𝒊𝒕𝒉 𝒏𝒐 𝒔𝒉𝒂𝒌𝒍𝒆𝒔.","avatar":"https://cdn.jsdelivr.net/gh/YOYOYOAKE/YOYOPics/avatar.png"},{"name":"AJohn Blog","link":"https://www.ajohn.top/","description":"Never, ever, ever give up.","avatar":"https://github.com/zzyAJohn.png"}]},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+            <a class="site-name border-box" href="/">
+               Zephyr&#39;s Blog
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/links">
+                                
+                                友链
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                关于
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/links">
+                            
+                            友链
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                            关于
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        CS61B-21SP-Project0
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Zephyr</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-10-11 12:22:47</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Sat Mar 01 2025 19:28:50 GMT+0800">2025-03-01 19:28:50</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/CS61B/">CS61B</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Java/">Java</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <p>关于这个项目,我们要完成的是一个2048游戏,我们有四个任务需要完成.<br>
+这四个任务的难度算是递增吧,他说最后一个的推荐时间是三到十个小时,其实是用不了那么多的,不用害怕.</p>
+<h2 id="emptySpaceExists">emptySpaceExists</h2>
+<p>我们先来看第一个, 我们要完成的是只要这个棋盘上有一个空格,就返回true.<br>
+我们无法直接访问棋盘上方块的值,需要用刚才的.value().<br>
+所以这个思路就很明确吧,遍历一遍棋盘就可以了.</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">emptySpaceExists</span><span class="params">(Board b)</span> {</span><br><span class="line">    <span class="type">int</span> <span class="variable">size</span> <span class="operator">=</span> b.size();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; size; i++) {</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; size; j++) {</span><br><span class="line">            <span class="comment">//return true if any of the tiles are null.</span></span><br><span class="line">            <span class="keyword">if</span> (b.tile(i, j) == <span class="literal">null</span>) {</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="maxTileExists">maxTileExists</h2>
+<p>然后看第二个, 这个要实现的是如果方块的值达到最大值返回true.<br>
+这个和第一个一样,遍历就可以了,注意.value()不能对null使用.</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">maxTileExists</span><span class="params">(Board b)</span> {</span><br><span class="line">    <span class="type">int</span> <span class="variable">size</span> <span class="operator">=</span> b.size();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; size; i++) {</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; size; j++) {</span><br><span class="line">            <span class="keyword">if</span> (b.tile(i, j) != <span class="literal">null</span>) {</span><br><span class="line">                <span class="keyword">if</span> (b.tile(i, j).value() == MAX_PIECE) {</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="atLeastOneMoveExists">atLeastOneMoveExists</h2>
+<p>第三个是判断这个棋盘还能不能动了,如果没有空位或者没有能合并的两个方块就是不能动了.<br>
+首先有没有空位我们可以直接用我们写的第一个方法判断.<br>
+然后是不是继续遍历呀,不过我们可以想一想,如果每个方块都判断一遍上下左右不仅特别麻烦,还会重复比较很多次.<br>
+而且不是每个方块都有上下左右的,靠边的我们还要特别处理,想一想就很麻烦吧,那应该怎么办呢?</p>
+<p>我们需要对他这个棋盘的布局熟悉一下,棋盘以左下角为(0,0),注意第一个坐标表示列,第二个表示行.<br>
+那么我们是不是判断每个方块的上边和右边有没有相同的值就可以了,这样就能覆盖所有的方块了.</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">atLeastOneMoveExists</span><span class="params">(Board b)</span> {</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> Fill in this function.</span></span><br><span class="line">    <span class="keyword">if</span> (emptySpaceExists(b)) {</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="type">int</span> <span class="variable">size</span> <span class="operator">=</span> b.size();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; size; i++) {</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; size; j++) {</span><br><span class="line">            <span class="comment">//whether there is the same value above.</span></span><br><span class="line">            <span class="keyword">if</span> (j &lt; size - <span class="number">1</span> &amp;&amp; b.tile(i, j).value() == b.tile(i, j + <span class="number">1</span>).value()) {</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">            }</span><br><span class="line">            <span class="comment">//whether there is the same value right.</span></span><br><span class="line">            <span class="keyword">if</span> (i &lt; size - <span class="number">1</span> &amp;&amp; b.tile(i, j).value() == b.tile(i + <span class="number">1</span>, j).value()) {</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="tilt">tilt</h2>
+<p>最后一个是完成这个游戏的部分逻辑,当我们摁上下左右键的时候改变棋盘,我们只需要负责判断方块是否合并再移动到它应该在的位置.并且还要积分.<br>
+我们目前不用考虑那么多,先只考虑摁上键的情况.<br>
+如果一个方块没有合并,那是不是可以直接滑就行了. 另外就是每个方块每个回合只能使用一次move,也就是要一次到位. 那么如果一列有两个无法合并的应该怎么移动?从上到下依次排列吧,也就是说,他移动的顺序是先考虑上面的,再考虑下面的.合并的顺序也是这样.<br>
+为什么这么做呢?根据游戏规则,如果有三个相同的方块挨着,先合并上面两个,比如一列是333x,合并结果就是63xy.<br>
+所以我们遍历的顺序需要改变一下,需要从倒数第二列开始(因为最上方是动不了的),从上到下遍历,这样才能保证合并的顺序是对的.<br>
+如果上方为空,就可以移动上去,如果上方值相同也可以移动上去合并,如果都不行,那就动不了. 不要忘了每个方块每个回合只能合并一次,所以我们还要记录这个方块有没有合并过.<br>
+还要更新一下分数,move合并的话会返回ture,可以用这个来判断是否加分.<br>
+最后就是加上他给的辅助转换视角的函数.</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">tilt</span><span class="params">(Side side)</span> {</span><br><span class="line">    <span class="type">boolean</span> changed;</span><br><span class="line">    changed = <span class="literal">false</span>;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> Modify this.board (and perhaps this.score) to account</span></span><br><span class="line">    <span class="comment">// for the tilt to the Side SIDE. If the board changed, set the</span></span><br><span class="line">    <span class="comment">// changed local variable to true.</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">size</span> <span class="operator">=</span> board.size();</span><br><span class="line">    <span class="comment">//record whether have been merged.</span></span><br><span class="line">    board.setViewingPerspective(side);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; size; i++) {</span><br><span class="line">        <span class="type">boolean</span>[] merged = <span class="keyword">new</span> <span class="title class_">boolean</span>[size];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> size - <span class="number">2</span>; j &gt;= <span class="number">0</span>; j--) {</span><br><span class="line">            <span class="type">Tile</span> <span class="variable">t</span> <span class="operator">=</span> board.tile(i, j);</span><br><span class="line">            <span class="keyword">if</span> (t == <span class="literal">null</span>) {</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            }</span><br><span class="line">            <span class="comment">//find target.</span></span><br><span class="line">            <span class="type">int</span> <span class="variable">target</span> <span class="operator">=</span> j;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">c</span> <span class="operator">=</span> j + <span class="number">1</span>; c &lt; size; c++) {</span><br><span class="line">                <span class="keyword">if</span> (board.tile(i, c) == <span class="literal">null</span>) {</span><br><span class="line">                    target = c;</span><br><span class="line">                } <span class="keyword">else</span> <span class="keyword">if</span> (board.tile(i, c).value() == t.value() &amp;&amp; !merged[c]) {</span><br><span class="line">                    target = c;</span><br><span class="line">                    merged[c] = <span class="literal">true</span>;</span><br><span class="line">                } <span class="keyword">else</span> {</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">            <span class="comment">//update score</span></span><br><span class="line">            <span class="keyword">if</span> (target != j) {</span><br><span class="line">                <span class="keyword">if</span> (board.move(i, target, t)) {</span><br><span class="line">                    score += t.value() * <span class="number">2</span>;</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">            changed = <span class="literal">true</span>;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (changed) {</span><br><span class="line">        setChanged();</span><br><span class="line">    }</span><br><span class="line">    board.setViewingPerspective(Side.NORTH);</span><br><span class="line">    <span class="keyword">return</span> changed;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>这个项目还是比较基础的,主要就是熟悉一下Java的写法,毕竟和Python还是有区别的.</p>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Java/">Java</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/posts/f397e04e.html"
+                                   title="周记(三)"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">周记(三)</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/posts/91a50de5.html"
+                                   title="CS61A(二)"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">CS61A(二)</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#emptySpaceExists"><span class="nav-text">emptySpaceExists</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#maxTileExists"><span class="nav-text">maxTileExists</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#atLeastOneMoveExists"><span class="nav-text">atLeastOneMoveExists</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tilt"><span class="nav-text">tilt</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;<span>2024</span>&nbsp;-&nbsp;2025
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Zephyr</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io" rel="external nofollow noreferrer">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep" rel="external nofollow noreferrer">Keep</a>
+    </div>
+
+    
+
+    
+        <div class="count-info info-item">
+            
+
+            
+                <span class="count-item border-box uv">
+                    <span class="item-type border-box">访客数</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">访问量</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+            <li class="tools-item rss flex-center">
+                <a class="flex-center"
+                   href="/atom.xml"
+                   target="_blank"
+                >
+                    <i class="fas fa-rss"></i>
+                </a>
+            </li>
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#emptySpaceExists"><span class="nav-text">emptySpaceExists</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#maxTileExists"><span class="nav-text">maxTileExists</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#atLeastOneMoveExists"><span class="nav-text">atLeastOneMoveExists</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tilt"><span class="nav-text">tilt</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/toggle-theme.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/code-block.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/libs/anime.min.js"></script>
+
+<!-- local search -->
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/local-search.js"></script>
+
+
+<!-- lazyload -->
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/lazyload.js"></script>
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/post/post-helper.js"></script>
+
+        <!-- toc -->
+        
+            <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@4.2.5/source/js/post/toc.js"></script>
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+    
+        
+    
+
+</body>
+</html>
