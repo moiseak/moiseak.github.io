@@ -6,17 +6,51 @@
   <link href="https://moiseak.github.io/atom.xml" rel="self"/>
   
   <link href="https://moiseak.github.io/"/>
-  <updated>2025-01-10T07:02:14.325Z</updated>
+  <updated>2025-03-09T15:14:04.841Z</updated>
   <id>https://moiseak.github.io/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>周记（十）</title>
+    <link href="https://moiseak.github.io/posts/41cfa384.html"/>
+    <id>https://moiseak.github.io/posts/41cfa384.html</id>
+    <published>2025-03-09T13:51:23.000Z</published>
+    <updated>2025-03-09T15:14:04.841Z</updated>
+    
+    
+    <summary type="html">周记</summary>
+    
+    
+    
+    <category term="周记" scheme="https://moiseak.github.io/categories/%E5%91%A8%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>周记（九）</title>
+    <link href="https://moiseak.github.io/posts/c4fd8640.html"/>
+    <id>https://moiseak.github.io/posts/c4fd8640.html</id>
+    <published>2025-03-01T09:51:23.000Z</published>
+    <updated>2025-03-09T15:14:04.839Z</updated>
+    
+    
+    <summary type="html">周记</summary>
+    
+    
+    
+    <category term="周记" scheme="https://moiseak.github.io/categories/%E5%91%A8%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>年终总结</title>
     <link href="https://moiseak.github.io/posts/1f18a9aa.html"/>
     <id>https://moiseak.github.io/posts/1f18a9aa.html</id>
     <published>2025-01-10T06:59:23.000Z</published>
-    <updated>2025-01-10T07:02:14.325Z</updated>
+    <updated>2025-03-01T09:49:58.009Z</updated>
     
     
     <summary type="html">2024</summary>
@@ -31,7 +65,7 @@
     <link href="https://moiseak.github.io/posts/450ba28c.html"/>
     <id>https://moiseak.github.io/posts/450ba28c.html</id>
     <published>2025-01-10T05:53:23.000Z</published>
-    <updated>2025-01-10T05:52:48.217Z</updated>
+    <updated>2025-02-28T09:24:52.199Z</updated>
     
     
     <summary type="html">Centos7停止维护后修改yum源，更新gcc</summary>
@@ -50,7 +84,7 @@
     <link href="https://moiseak.github.io/posts/be30a71f.html"/>
     <id>https://moiseak.github.io/posts/be30a71f.html</id>
     <published>2024-12-16T08:06:33.000Z</published>
-    <updated>2024-12-16T08:06:12.299Z</updated>
+    <updated>2025-02-28T09:24:52.201Z</updated>
     
     
     <summary type="html">周记</summary>
@@ -179,7 +213,7 @@
     <link href="https://moiseak.github.io/posts/afafbad8.html"/>
     <id>https://moiseak.github.io/posts/afafbad8.html</id>
     <published>2024-11-08T07:35:33.000Z</published>
-    <updated>2024-11-16T07:42:47.853Z</updated>
+    <updated>2025-03-09T13:52:51.105Z</updated>
     
     
     <summary type="html">早八有感</summary>
@@ -336,48 +370,6 @@
     
     
     <category term="Java" scheme="https://moiseak.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS61A(二)</title>
-    <link href="https://moiseak.github.io/posts/91a50de5.html"/>
-    <id>https://moiseak.github.io/posts/91a50de5.html</id>
-    <published>2024-10-04T15:11:27.000Z</published>
-    <updated>2024-11-16T06:35:05.640Z</updated>
-    
-    
-    <summary type="html">函数式编程</summary>
-    
-    
-    
-    <category term="CS61A" scheme="https://moiseak.github.io/categories/CS61A/"/>
-    
-    
-    <category term="Scheme" scheme="https://moiseak.github.io/tags/Scheme/"/>
-    
-    <category term="Python" scheme="https://moiseak.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CS61A(一)</title>
-    <link href="https://moiseak.github.io/posts/4eba9996.html"/>
-    <id>https://moiseak.github.io/posts/4eba9996.html</id>
-    <published>2024-09-27T11:18:45.000Z</published>
-    <updated>2024-11-16T06:35:11.970Z</updated>
-    
-    
-    <summary type="html">递归</summary>
-    
-    
-    
-    <category term="CS61A" scheme="https://moiseak.github.io/categories/CS61A/"/>
-    
-    
-    <category term="Python" scheme="https://moiseak.github.io/tags/Python/"/>
-    
-    <category term="算法" scheme="https://moiseak.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   

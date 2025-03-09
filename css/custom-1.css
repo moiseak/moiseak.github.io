@@ -2,7 +2,9 @@
 :root {
 
     /* 修改全局默认字体样式 */
-    --base-font-family: 'CUSTOM-FONT';
+    /*--base-font-family: 'CUSTOM-FONT';*/
+
+    --base-font-family: "LXGW WenKai";
     --base-font-size: 18px;
 
     /* 设置 Header 头部的背景毛玻璃效果程度 */
