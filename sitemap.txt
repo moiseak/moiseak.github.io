@@ -31,10 +31,10 @@ https://moiseak.github.io/
 https://moiseak.github.io/tags/%E7%AE%97%E6%B3%95/
 https://moiseak.github.io/tags/Python/
 https://moiseak.github.io/tags/Java/
-https://moiseak.github.io/tags/Scheme/
-https://moiseak.github.io/tags/Linux/
-https://moiseak.github.io/tags/Spring/
 https://moiseak.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/
+https://moiseak.github.io/tags/Linux/
+https://moiseak.github.io/tags/Scheme/
+https://moiseak.github.io/tags/Spring/
 https://moiseak.github.io/categories/CS61A/
 https://moiseak.github.io/categories/CS61B/
 https://moiseak.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/
