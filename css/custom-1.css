@@ -1,0 +1,44 @@
+
+:root {
+
+    /* 修改全局默认字体样式 */
+    --base-font-family: 'CUSTOM-FONT';
+    /*--base-font-family: "STKaiti";*/
+
+    /*--base-font-family: "LXGW WenKai";*/
+    --base-font-size: 18px;
+
+    /* 设置 Header 头部的背景毛玻璃效果程度 */
+    --header-backdrop-filter-blur: 5px;
+
+    /* 设置 Header 头部的 Title 字体大小 */
+    --header-title-font-size: 30px;
+
+    --first-screen-font-size: 40px;
+
+    /* 设置 Header 头部的 Title 字体样式 */
+    --header-title-font-family: STKaiti;
+
+    /* 设置首页文章模块鼠标悬浮时的缩放级别（默认 1） */
+    --home-post-hover-scale: 1.025;
+
+    /* 隐藏文章内容页面作者头像 */
+    --post-author-avatar: none;
+
+    /* 隐藏文章内容页面作者名称 */
+    --post-author-name: none;
+
+    /* 隐藏文章内容页面的文章创建时间 */
+    --post-create-datetime: flex;
+
+    /* 隐藏文章内容页面的文章修改时间 */
+    --post-update-datetime: none;
+
+    /*
+       设置文章中的图片排列位置
+       居左：0 auto 0 0（默认）
+       居中：0 auto
+       居右：0 0 0 auto
+    */
+    --post-img-align: 0 auto;
+}
