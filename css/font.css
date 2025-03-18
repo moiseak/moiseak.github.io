@@ -1,0 +1,8 @@
+/* your-hexo/source/css/font.css */
+
+@font-face {
+    font-family: 'CUSTOM-FONT';
+    src: url('../font/custom-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
